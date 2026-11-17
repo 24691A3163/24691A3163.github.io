@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Avula Divya Tej Reddy — Computer Science and Engineering (AI) student, developer, and AI/ML enthusiast. Featuring verified certifications, projects, and internships.">
+  <meta name="description"
+    content="Portfolio of Avula Divya Tej Reddy — Computer Science and Engineering (AI) student, developer, and AI/ML enthusiast. Featuring verified certifications, projects, and internships.">
   <title>Avula Divya Tej Reddy | Portfolio & Certifications</title>
   <style>
     :root {
@@ -26,21 +28,36 @@
       --purple: #c084fc;
       --purple-bg: rgba(192, 132, 252, .15);
     }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
       background: radial-gradient(circle at 85% 5%, #1b2b50 0, transparent 32%),
-                  radial-gradient(circle at 10% 40%, rgba(124, 58, 237, 0.08) 0, transparent 40%),
-                  var(--bg);
+        radial-gradient(circle at 10% 40%, rgba(124, 58, 237, 0.08) 0, transparent 40%),
+        var(--bg);
       color: var(--text);
       line-height: 1.65;
       min-height: 100vh;
     }
-    a { color: inherit; text-decoration: none; }
-    .wrap { width: min(1140px, 92%); margin: auto; }
-    
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .wrap {
+      width: min(1140px, 92%);
+      margin: auto;
+    }
+
     /* Header & Navigation */
     header {
       position: sticky;
@@ -52,6 +69,7 @@
       border-bottom: 1px solid var(--line);
       transition: background 0.3s;
     }
+
     nav {
       display: flex;
       justify-content: space-between;
@@ -59,6 +77,7 @@
       padding: 16px 0;
       gap: 20px;
     }
+
     .brand {
       font-weight: 800;
       letter-spacing: .3px;
@@ -67,7 +86,11 @@
       align-items: center;
       gap: 6px;
     }
-    .brand span { color: var(--accent); }
+
+    .brand span {
+      color: var(--accent);
+    }
+
     .navlinks {
       display: flex;
       gap: 20px;
@@ -76,14 +99,17 @@
       color: var(--muted);
       align-items: center;
     }
+
     .navlinks a {
       transition: color 0.2s, transform 0.2s;
       font-weight: 500;
     }
+
     .navlinks a:hover {
       color: var(--accent);
       transform: translateY(-1px);
     }
+
     .nav-badge {
       background: linear-gradient(135deg, #0284c7, #7c3aed);
       color: white;
@@ -102,6 +128,7 @@
       gap: 44px;
       align-items: center;
     }
+
     .eyebrow {
       color: var(--accent);
       font-weight: 700;
@@ -112,6 +139,7 @@
       align-items: center;
       gap: 8px;
     }
+
     .eyebrow::before {
       content: "";
       display: inline-block;
@@ -121,6 +149,7 @@
       background: var(--accent);
       box-shadow: 0 0 10px var(--accent);
     }
+
     h1 {
       font-size: clamp(2.4rem, 5.5vw, 4.4rem);
       line-height: 1.1;
@@ -128,24 +157,28 @@
       letter-spacing: -1.5px;
       font-weight: 900;
     }
+
     h1 span {
       background: linear-gradient(90deg, var(--accent), var(--accent2));
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
     }
+
     .lead {
       font-size: 1.12rem;
       color: var(--muted);
       max-width: 650px;
       margin-bottom: 24px;
     }
+
     .actions {
       display: flex;
       gap: 12px;
       flex-wrap: wrap;
       margin-top: 24px;
     }
+
     .btn {
       display: inline-flex;
       align-items: center;
@@ -161,44 +194,51 @@
       transition: all 0.25s ease;
       text-decoration: none;
     }
+
     .btn:hover {
       transform: translateY(-2px);
       border-color: var(--line-hover);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
     }
+
     .btn.primary {
       background: linear-gradient(100deg, #0284c7, #7c3aed);
       border: 0;
       color: white;
       box-shadow: 0 4px 15px rgba(2, 132, 199, 0.35);
     }
+
     .btn.primary:hover {
       box-shadow: 0 8px 25px rgba(124, 58, 237, 0.45);
     }
+
     .btn.sm {
       padding: 7px 12px;
       font-size: 0.82rem;
       border-radius: 8px;
     }
+
     .btn.outline-accent {
       border-color: rgba(125, 211, 252, 0.4);
       color: var(--accent);
       background: rgba(125, 211, 252, 0.06);
     }
+
     .btn.outline-accent:hover {
       background: rgba(125, 211, 252, 0.16);
       border-color: var(--accent);
       color: #fff;
     }
-    
+
     /* Profile Card */
     .profile-card {
-      background: linear-gradient(145deg, rgba(125,211,252,.12), rgba(167,139,250,.10));
+      background: linear-gradient(145deg, rgba(125, 211, 252, .12), rgba(167, 139, 250, .10));
       border: 1px solid var(--line);
       border-radius: 24px;
       padding: 28px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     }
+
     .initials {
       width: 86px;
       height: 86px;
@@ -209,14 +249,16 @@
       font-weight: 900;
       background: linear-gradient(135deg, #0284c7, #7c3aed);
       margin-bottom: 20px;
-      box-shadow: 0 8px 20px rgba(2,132,199,0.3);
+      box-shadow: 0 8px 20px rgba(2, 132, 199, 0.3);
     }
+
     .statgrid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 12px;
       margin-top: 20px;
     }
+
     .stat {
       background: rgba(10, 15, 30, .55);
       border: 1px solid var(--line);
@@ -224,34 +266,48 @@
       border-radius: 14px;
       transition: border-color 0.2s;
     }
-    .stat:hover { border-color: var(--line-hover); }
+
+    .stat:hover {
+      border-color: var(--line-hover);
+    }
+
     .stat strong {
       display: block;
       font-size: 1.35rem;
       color: var(--accent);
       font-weight: 800;
     }
-    .stat small { color: var(--muted); font-size: 0.82rem; }
+
+    .stat small {
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
 
     /* Sections */
-    section { padding: 64px 0; }
+    section {
+      padding: 64px 0;
+    }
+
     .section-title {
       font-size: 2.1rem;
       margin: 0 0 8px;
       font-weight: 800;
       letter-spacing: -0.5px;
     }
+
     .section-sub {
       color: var(--muted);
       margin: 0 0 30px;
       font-size: 1.05rem;
       max-width: 720px;
     }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 20px;
     }
+
     .card {
       background: var(--panel);
       border: 1px solid var(--line);
@@ -262,29 +318,34 @@
       flex-direction: column;
       justify-content: space-between;
     }
+
     .card:hover {
       transform: translateY(-4px);
       border-color: var(--line-hover);
       box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
     }
+
     .card h3 {
       margin: 0 0 10px;
       font-size: 1.22rem;
       line-height: 1.35;
       font-weight: 700;
     }
+
     .card p {
       color: var(--muted);
       margin: 0 0 16px;
       font-size: 0.95rem;
       flex-grow: 1;
     }
+
     .tags {
       display: flex;
       gap: 7px;
       flex-wrap: wrap;
       margin: 12px 0 16px;
     }
+
     .tag {
       font-size: .78rem;
       color: #cfeeff;
@@ -294,6 +355,7 @@
       border-radius: 99px;
       font-weight: 500;
     }
+
     .cardlink {
       color: var(--accent);
       font-weight: 700;
@@ -302,10 +364,18 @@
       align-items: center;
       gap: 5px;
     }
-    .cardlink:hover { text-decoration: underline; }
-    
+
+    .cardlink:hover {
+      text-decoration: underline;
+    }
+
     /* Skills */
-    .skills { display: flex; flex-wrap: wrap; gap: 10px; }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
     .skill {
       padding: 10px 16px;
       background: var(--panel);
@@ -316,6 +386,7 @@
       font-weight: 500;
       transition: all 0.2s;
     }
+
     .skill:hover {
       border-color: var(--accent);
       transform: translateY(-2px);
@@ -328,10 +399,12 @@
       padding-left: 24px;
       margin-left: 8px;
     }
+
     .timeline-item {
       position: relative;
       margin: 0 0 26px;
     }
+
     .timeline-item:before {
       content: "";
       position: absolute;
@@ -343,12 +416,16 @@
       left: -31px;
       top: 6px;
     }
+
     .timeline-item strong {
       font-size: 1.08rem;
       display: block;
       margin-bottom: 4px;
     }
-    .muted { color: var(--muted); }
+
+    .muted {
+      color: var(--muted);
+    }
 
     /* Contact */
     .contactbox {
@@ -357,7 +434,7 @@
       align-items: center;
       gap: 22px;
       flex-wrap: wrap;
-      background: linear-gradient(120deg, rgba(2,132,199,.18), rgba(124,58,237,.18));
+      background: linear-gradient(120deg, rgba(2, 132, 199, .18), rgba(124, 58, 237, .18));
       border: 1px solid var(--line);
       border-radius: 20px;
       padding: 32px;
@@ -366,7 +443,7 @@
     /* ============================================================
        CERTIFICATIONS SECTION SPECIFIC STYLES
        ============================================================ */
-    
+
     /* Stats Bar */
     .cert-stats {
       display: grid;
@@ -374,6 +451,7 @@
       gap: 14px;
       margin-bottom: 34px;
     }
+
     .cert-stat-card {
       background: linear-gradient(160deg, rgba(18, 26, 46, 0.95), rgba(23, 34, 58, 0.8));
       border: 1px solid var(--line);
@@ -384,6 +462,7 @@
       position: relative;
       overflow: hidden;
     }
+
     .cert-stat-card::after {
       content: "";
       position: absolute;
@@ -394,11 +473,13 @@
       background: linear-gradient(90deg, var(--accent), var(--accent2));
       opacity: 0.6;
     }
+
     .cert-stat-card:hover {
       transform: translateY(-3px);
       border-color: var(--line-hover);
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
     }
+
     .cert-stat-num {
       font-size: 2.1rem;
       font-weight: 900;
@@ -409,12 +490,14 @@
       background-clip: text;
       color: transparent;
     }
+
     .cert-stat-label {
       font-size: 0.85rem;
       font-weight: 700;
       color: var(--text);
       margin-bottom: 2px;
     }
+
     .cert-stat-sub {
       font-size: 0.73rem;
       color: var(--muted);
@@ -431,17 +514,20 @@
       flex-direction: column;
       gap: 16px;
     }
+
     .cert-toolbar-top {
       display: flex;
       gap: 14px;
       flex-wrap: wrap;
       align-items: center;
     }
+
     .cert-search-box {
       flex: 1;
       min-width: 260px;
       position: relative;
     }
+
     .cert-search-box input {
       width: 100%;
       background: var(--bg);
@@ -453,10 +539,12 @@
       outline: none;
       transition: all 0.2s;
     }
+
     .cert-search-box input:focus {
       border-color: var(--accent);
       box-shadow: 0 0 0 3px rgba(125, 211, 252, 0.18);
     }
+
     .cert-search-box svg {
       position: absolute;
       left: 14px;
@@ -465,11 +553,13 @@
       color: var(--muted);
       pointer-events: none;
     }
+
     .cert-dropdowns {
       display: flex;
       gap: 10px;
       flex-wrap: wrap;
     }
+
     .cert-select {
       background: var(--bg);
       border: 1px solid var(--line);
@@ -481,8 +571,11 @@
       outline: none;
       transition: border-color 0.2s;
     }
-    .cert-select:focus { border-color: var(--accent); }
-    
+
+    .cert-select:focus {
+      border-color: var(--accent);
+    }
+
     .cert-categories {
       display: flex;
       gap: 8px;
@@ -490,6 +583,7 @@
       border-top: 1px solid rgba(255, 255, 255, 0.06);
       padding-top: 14px;
     }
+
     .cat-btn {
       background: var(--panel2);
       border: 1px solid var(--line);
@@ -504,21 +598,25 @@
       align-items: center;
       gap: 6px;
     }
+
     .cat-btn:hover {
       color: var(--text);
       border-color: var(--line-hover);
     }
+
     .cat-btn.active {
       background: linear-gradient(100deg, rgba(2, 132, 199, 0.35), rgba(124, 58, 237, 0.35));
       border-color: var(--accent);
       color: #fff;
     }
+
     .cat-badge {
       background: rgba(255, 255, 255, 0.12);
       padding: 1px 6px;
       border-radius: 99px;
       font-size: 0.72rem;
     }
+
     .cat-btn.active .cat-badge {
       background: var(--accent);
       color: #0b1020;
@@ -535,6 +633,7 @@
       color: var(--muted);
       padding: 0 4px;
     }
+
     .reset-btn {
       color: var(--accent);
       background: none;
@@ -552,6 +651,7 @@
       grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
       gap: 20px;
     }
+
     .cert-card {
       background: var(--panel);
       border: 1px solid var(--line);
@@ -564,11 +664,13 @@
       position: relative;
       overflow: hidden;
     }
+
     .cert-card:hover {
       transform: translateY(-4px);
       border-color: var(--line-hover);
       box-shadow: 0 14px 34px rgba(0, 0, 0, 0.32);
     }
+
     .cert-card-header {
       display: flex;
       justify-content: space-between;
@@ -576,6 +678,7 @@
       gap: 10px;
       margin-bottom: 12px;
     }
+
     .cert-category-pill {
       font-size: 0.74rem;
       font-weight: 700;
@@ -584,12 +687,42 @@
       text-transform: uppercase;
       letter-spacing: 0.5px;
     }
-    .cat-nptel { background: rgba(56, 189, 248, 0.15); color: #7dd3fc; border: 1px solid rgba(56, 189, 248, 0.3); }
-    .cat-nasscom { background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
-    .cat-internships { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
-    .cat-technical { background: rgba(168, 85, 247, 0.15); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.3); }
-    .cat-events { background: rgba(244, 63, 94, 0.15); color: #fb7185; border: 1px solid rgba(244, 63, 94, 0.3); }
-    .cat-offers { background: rgba(99, 102, 241, 0.15); color: #a5b4fc; border: 1px solid rgba(99, 102, 241, 0.3); }
+
+    .cat-nptel {
+      background: rgba(56, 189, 248, 0.15);
+      color: #7dd3fc;
+      border: 1px solid rgba(56, 189, 248, 0.3);
+    }
+
+    .cat-nasscom {
+      background: rgba(245, 158, 11, 0.15);
+      color: #fbbf24;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+    }
+
+    .cat-internships {
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+
+    .cat-technical {
+      background: rgba(168, 85, 247, 0.15);
+      color: #c084fc;
+      border: 1px solid rgba(168, 85, 247, 0.3);
+    }
+
+    .cat-events {
+      background: rgba(244, 63, 94, 0.15);
+      color: #fb7185;
+      border: 1px solid rgba(244, 63, 94, 0.3);
+    }
+
+    .cat-offers {
+      background: rgba(99, 102, 241, 0.15);
+      color: #a5b4fc;
+      border: 1px solid rgba(99, 102, 241, 0.3);
+    }
 
     .cert-score-badge {
       font-size: 0.75rem;
@@ -601,16 +734,19 @@
       color: #f1f5f9;
       white-space: nowrap;
     }
+
     .cert-score-badge.gold {
       background: var(--gold-bg);
       border-color: rgba(245, 158, 11, 0.4);
       color: var(--gold);
     }
+
     .cert-score-badge.green {
       background: var(--green-bg);
       border-color: rgba(16, 185, 129, 0.4);
       color: var(--green);
     }
+
     .cert-score-badge.blue {
       background: var(--blue-bg);
       border-color: rgba(56, 189, 248, 0.4);
@@ -624,6 +760,7 @@
       margin: 0 0 8px;
       color: #fff;
     }
+
     .cert-issuer {
       display: flex;
       align-items: center;
@@ -633,7 +770,11 @@
       font-weight: 600;
       margin-bottom: 6px;
     }
-    .cert-issuer svg { flex-shrink: 0; }
+
+    .cert-issuer svg {
+      flex-shrink: 0;
+    }
+
     .cert-date {
       font-size: 0.8rem;
       color: var(--muted);
@@ -642,6 +783,7 @@
       align-items: center;
       gap: 6px;
     }
+
     .cert-desc {
       font-size: 0.88rem;
       color: var(--muted);
@@ -649,12 +791,14 @@
       margin-bottom: 16px;
       flex-grow: 1;
     }
+
     .cert-skills {
       display: flex;
       flex-wrap: wrap;
       gap: 6px;
       margin-bottom: 18px;
     }
+
     .cert-skill-tag {
       font-size: 0.74rem;
       background: rgba(255, 255, 255, 0.05);
@@ -663,6 +807,7 @@
       padding: 3px 8px;
       border-radius: 6px;
     }
+
     .cert-card-actions {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -670,6 +815,7 @@
       padding-top: 14px;
       border-top: 1px solid rgba(255, 255, 255, 0.07);
     }
+
     .cert-btn {
       display: inline-flex;
       align-items: center;
@@ -684,21 +830,25 @@
       transition: all 0.2s;
       text-decoration: none;
     }
+
     .cert-btn.view {
       background: linear-gradient(100deg, rgba(2, 132, 199, 0.45), rgba(124, 58, 237, 0.45));
       border-color: rgba(125, 211, 252, 0.35);
       color: #fff;
     }
+
     .cert-btn.view:hover {
       background: linear-gradient(100deg, #0284c7, #7c3aed);
       border-color: var(--accent);
       transform: translateY(-2px);
       box-shadow: 0 4px 14px rgba(2, 132, 199, 0.3);
     }
+
     .cert-btn.download {
       background: var(--panel2);
       color: var(--muted);
     }
+
     .cert-btn.download:hover {
       color: #fff;
       border-color: var(--line-hover);
@@ -712,6 +862,7 @@
       padding-top: 50px;
       border-top: 1px solid var(--line);
     }
+
     .exp-badge {
       display: inline-flex;
       align-items: center;
@@ -735,8 +886,17 @@
       border: 1px dashed var(--line);
       border-radius: 18px;
     }
-    .empty-state h4 { margin: 10px 0 6px; font-size: 1.15rem; }
-    .empty-state p { color: var(--muted); font-size: 0.9rem; margin-bottom: 16px; }
+
+    .empty-state h4 {
+      margin: 10px 0 6px;
+      font-size: 1.15rem;
+    }
+
+    .empty-state p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 16px;
+    }
 
     /* ============================================================
        PDF VIEWER MODAL
@@ -756,10 +916,12 @@
       visibility: hidden;
       transition: opacity 0.25s ease, visibility 0.25s ease;
     }
+
     .modal-overlay.open {
       opacity: 1;
       visibility: visible;
     }
+
     .modal-container {
       width: min(1080px, 95vw);
       height: 90vh;
@@ -773,9 +935,11 @@
       transform: scale(0.96);
       transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
     }
+
     .modal-overlay.open .modal-container {
       transform: scale(1);
     }
+
     .modal-header {
       padding: 16px 20px;
       background: var(--panel2);
@@ -786,10 +950,12 @@
       gap: 16px;
       flex-shrink: 0;
     }
+
     .modal-title-group {
       min-width: 0;
       flex: 1;
     }
+
     .modal-cert-title {
       font-size: 1.05rem;
       font-weight: 700;
@@ -799,6 +965,7 @@
       text-overflow: ellipsis;
       color: #fff;
     }
+
     .modal-cert-sub {
       font-size: 0.8rem;
       color: var(--muted);
@@ -807,12 +974,14 @@
       gap: 8px;
       margin-top: 2px;
     }
+
     .modal-controls {
       display: flex;
       align-items: center;
       gap: 8px;
       flex-shrink: 0;
     }
+
     .modal-ctrl-btn {
       background: rgba(255, 255, 255, 0.07);
       border: 1px solid var(--line);
@@ -827,20 +996,24 @@
       transition: all 0.2s;
       text-decoration: none;
     }
+
     .modal-ctrl-btn:hover {
       background: rgba(255, 255, 255, 0.15);
       color: var(--accent);
       border-color: var(--accent);
     }
+
     .modal-ctrl-btn.close {
       background: rgba(239, 68, 68, 0.15);
       border-color: rgba(239, 68, 68, 0.3);
       color: #fca5a5;
     }
+
     .modal-ctrl-btn.close:hover {
       background: rgba(239, 68, 68, 0.35);
       color: #fff;
     }
+
     .modal-body {
       flex: 1;
       position: relative;
@@ -850,6 +1023,7 @@
       align-items: center;
       justify-content: center;
     }
+
     .pdf-frame-wrapper {
       width: 100%;
       height: 100%;
@@ -860,6 +1034,7 @@
       transition: transform 0.2s ease;
       transform-origin: top center;
     }
+
     .pdf-frame-wrapper iframe {
       width: 100%;
       height: 100%;
@@ -874,6 +1049,7 @@
       color: var(--muted);
       font-size: .9rem;
     }
+
     .footer-content {
       display: flex;
       justify-content: space-between;
@@ -884,628 +1060,763 @@
 
     /* Responsive */
     @media (max-width: 900px) {
-      .hero { grid-template-columns: 1fr; padding: 60px 0; }
-      .cert-stats { grid-template-columns: repeat(3, 1fr); }
-    }
-    @media (max-width: 760px) {
-      .grid { grid-template-columns: 1fr; }
-      .cert-stats { grid-template-columns: repeat(2, 1fr); }
-      .cert-grid { grid-template-columns: 1fr; }
-      .navlinks { gap: 12px; font-size: .84rem; }
-      nav { align-items: flex-start; flex-direction: column; gap: 12px; }
-      h1 { letter-spacing: -1px; }
-      .cert-toolbar-top { flex-direction: column; align-items: stretch; }
-      .cert-search-box { width: 100%; }
-      .cert-dropdowns { width: 100%; }
-      .cert-select { flex: 1; }
-      .modal-container { width: 98vw; height: 95vh; border-radius: 14px; }
-      .modal-header { padding: 12px 14px; }
-      .modal-ctrl-btn { width: 32px; height: 32px; }
-    }
-    @media (max-width: 480px) {
-      .cert-stats { grid-template-columns: 1fr; }
-      .cert-card-actions { grid-template-columns: 1fr; }
-    }
-  </style>
-</head>
-<body>
+      .hero {
+        grid-template-columns: 1fr;
+        padding: 60px 0;
+      }
 
-<!-- Navigation Header -->
-<header>
-  <div class="wrap">
-    <nav>
-      <a class="brand" href="#home">DIVYA <span>TEJ.</span></a>
-      <div class="navlinks">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#certifications">Certifications <span class="nav-badge" id="navCertCount">37</span></a>
-        <a href="#experience">Internships</a>
-        <a href="#achievements">Achievements</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
-  </div>
-</header>
-
-<main>
-  <!-- Hero Section -->
-  <div class="wrap hero" id="home">
-    <div>
-      <div class="eyebrow">CSE (Artificial Intelligence) Student · Developer</div>
-      <h1>Hi, I'm<br><span>Avula Divya Tej Reddy</span></h1>
-      <p class="lead">Computer Science and Engineering student specializing in Artificial Intelligence. Passionate about engineering production-ready software solutions, deep neural networks, distributed systems, and real-world AI/ML applications.</p>
-      <div class="actions">
-        <a class="btn primary" href="#certifications">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15l-2 5l9-13h-6l2-5l-9 13h6z"/></svg>
-          View Verified Certifications
-        </a>
-        <a class="btn" href="#projects">Explore Projects</a>
-        <a class="btn outline-accent" href="https://www.linkedin.com/in/divya-tej-reddy-avula" target="_blank" rel="noreferrer">LinkedIn profile ↗</a>
-        <a class="btn" href="https://github.com/24691A3163" target="_blank" rel="noreferrer">GitHub ↗</a>
-      </div>
-    </div>
-    <aside class="profile-card">
-      <div class="initials">DT</div>
-      <h2 style="margin:0 0 4px; font-size:1.35rem">Aspiring Software & AI/ML Engineer</h2>
-      <p class="muted" style="margin:0; font-size:0.92rem">Focused on deep learning, full-stack engineering, and industry-backed research credentials.</p>
-      <div class="statgrid">
-        <div class="stat">
-          <strong>9.89</strong>
-          <small>CGPA (B.Tech Record)</small>
-        </div>
-        <div class="stat">
-          <strong id="heroCertCount">37</strong>
-          <small>Verified Certifications</small>
-        </div>
-        <div class="stat">
-          <strong>CSE (AI)</strong>
-          <small>Academic Programme</small>
-        </div>
-        <div class="stat">
-          <strong>4+</strong>
-          <small>Virtual Internships</small>
-        </div>
-      </div>
-    </aside>
-  </div>
-
-  <!-- About Section -->
-  <section id="about">
-    <div class="wrap">
-      <h2 class="section-title">About Me</h2>
-      <p class="section-sub">A little about my academic background, technical focus, and aspirations.</p>
-      <div class="card">
-        <p>I am pursuing a B.Tech in Computer Science and Engineering (Artificial Intelligence) at Madanapalle Institute of Technology & Science (MITS), Andhra Pradesh. I have maintained a strong academic track record (9.89 CGPA) combined with consistent hands-on implementation across modern AI/ML frameworks, distributed systems, cloud computing, and full-stack software development.</p>
-        <p class="muted" style="margin-bottom:0">Core Competencies: Machine Learning · Deep Learning (CNNs, Transformers, VGG-16) · Full Stack Web Development (React, FastAPI, Django, Spring Boot) · Distributed Systems · Cloud (AWS) · Data Science & Analytics</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Technical Skills Section -->
-  <section id="skills">
-    <div class="wrap">
-      <h2 class="section-title">Technical Skills</h2>
-      <p class="section-sub">Programming languages, AI/ML tools, frameworks, and developer technologies.</p>
-      <div class="skills">
-        <span class="skill">Python</span>
-        <span class="skill">Java</span>
-        <span class="skill">C</span>
-        <span class="skill">Data Structures & Algorithms</span>
-        <span class="skill">PyTorch & TensorFlow</span>
-        <span class="skill">Deep Learning (CNNs, VGG-16)</span>
-        <span class="skill">ONNX Runtime & Edge AI</span>
-        <span class="skill">Natural Language Processing (NLP)</span>
-        <span class="skill">Generative AI & LLMs</span>
-        <span class="skill">Prompt Engineering</span>
-        <span class="skill">React & TypeScript</span>
-        <span class="skill">Tailwind CSS</span>
-        <span class="skill">FastAPI</span>
-        <span class="skill">Django</span>
-        <span class="skill">Spring Boot</span>
-        <span class="skill">SQL & Relational Databases</span>
-        <span class="skill">Supabase & PostgreSQL</span>
-        <span class="skill">AWS Cloud Essentials</span>
-        <span class="skill">UiPath RPA</span>
-        <span class="skill">Git & GitHub</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Featured Projects Section -->
-  <section id="projects">
-    <div class="wrap">
-      <h2 class="section-title">Featured Projects</h2>
-      <p class="section-sub">Real-world AI/ML systems, full-stack platforms, and research applications.</p>
-      <div class="grid">
-        <!-- Project 1: Intelligent Crop Recommendation System -->
-        <article class="card">
-          <div>
-            <div class="tags"><span class="tag" style="background:rgba(16,185,129,.15); color:#34d399; border-color:rgba(16,185,129,.3);">AI & Deep Learning</span></div>
-            <h3>Intelligent Crop Recommendation System using AI & DL Models</h3>
-            <p>Production-grade, full-stack agricultural decision support system powered by 12 trained Machine Learning and Deep Neural Network architectures, featuring a novel <strong>Hybrid XGBoost + ANN probability fusion model achieving 99.55% test accuracy</strong>. Integrated with a high-performance FastAPI inference backend, Supabase PostgreSQL with Row Level Security (RLS), and a modern React dashboard with Recharts agronomic analytics.</p>
-            <div class="tags">
-              <span class="tag">Python</span>
-              <span class="tag">Deep Learning (ANN)</span>
-              <span class="tag">XGBoost</span>
-              <span class="tag">Random Forest (99.55%)</span>
-              <span class="tag">FastAPI</span>
-              <span class="tag">Supabase RLS</span>
-              <span class="tag">React</span>
-              <span class="tag">Recharts</span>
-            </div>
-          </div>
-          <div>
-            <span class="muted" style="font-size:0.86rem; display:block; margin-bottom:8px;">12 Trained AI Models · Full Stack Precision Agriculture</span>
-            <span class="cardlink" style="color:var(--green);">Hybrid AI/DL Research Project ✓</span>
-          </div>
-        </article>
-
-        <!-- Project 2: Mango Leaf Disease Prediction -->
-        <article class="card">
-          <div>
-            <div class="tags"><span class="tag" style="background:rgba(168,85,247,.15); color:#c084fc; border-color:rgba(168,85,247,.3);">Computer Vision</span></div>
-            <h3>Mango Leaf Disease Prediction using VGG-16 Neural Networks</h3>
-            <p>Deep transfer learning vision system leveraging fine-tuned <strong>VGG-16 Convolutional Neural Networks</strong> to classify and diagnose mango leaf fungal and bacterial diseases. Converted to ONNX format for zero-latency, private, client-side edge inference directly in the browser via <strong>ONNX Runtime Web</strong>, wrapped with a clean React + TypeScript diagnostic UI and real-time confidence scores.</p>
-            <div class="tags">
-              <span class="tag">PyTorch</span>
-              <span class="tag">VGG-16</span>
-              <span class="tag">ONNX Runtime Web</span>
-              <span class="tag">Computer Vision</span>
-              <span class="tag">Transfer Learning</span>
-              <span class="tag">React</span>
-              <span class="tag">TypeScript</span>
-            </div>
-          </div>
-          <div>
-            <span class="muted" style="font-size:0.86rem; display:block; margin-bottom:8px;">Edge AI Inference in Browser · Zero Backend Latency</span>
-            <span class="cardlink" style="color:var(--purple);">Deep Transfer Learning Project ✓</span>
-          </div>
-        </article>
-
-        <!-- Project 3: SDG 4 Education Insights Hub -->
-        <article class="card">
-          <div>
-            <div class="tags"><span class="tag">Verified Industry Project</span></div>
-            <h3>SDG 4 Education Insights Hub</h3>
-            <p>A web-based education insights platform focused on UN SDG 4 (Quality Education). Developed under the PSNM Innovations JobXperience™ program, synthesizing real data from data.gov.in, education indicators, and community feedback to support data-informed regional educational interventions.</p>
-            <div class="tags">
-              <span class="tag">React</span>
-              <span class="tag">TypeScript</span>
-              <span class="tag">Tailwind CSS</span>
-              <span class="tag">Supabase</span>
-              <span class="tag">Data Analysis</span>
-            </div>
-          </div>
-          <div>
-            <a class="cardlink" href="https://sdg4-eduinsightshub.lovable.app" target="_blank" rel="noreferrer">View live project ↗</a>
-          </div>
-        </article>
-
-        <!-- Project 4: Landslide & Flash-Flood Early Warning System -->
-        <article class="card">
-          <div>
-            <div class="tags"><span class="tag">Disaster Management</span></div>
-            <h3>Landslide & Flash-Flood Early Warning System</h3>
-            <p>An early-warning project concept for mountainous and hilly regions, combining rainfall threshold statistics, soil-moisture sensor metrics, terrain slope parameters, and historical flood information to generate village-level risk assessments.</p>
-            <div class="tags">
-              <span class="tag">Python</span>
-              <span class="tag">Machine Learning</span>
-              <span class="tag">FastAPI</span>
-              <span class="tag">Geo Data</span>
-            </div>
-          </div>
-          <div>
-            <span class="muted">SIH Project / In Progress</span>
-          </div>
-        </article>
-
-        <!-- Project 5: Resource Allocation & CPU Usage Analysis -->
-        <article class="card" style="grid-column: 1 / -1;">
-          <div>
-            <div class="tags"><span class="tag">Academic Research</span></div>
-            <h3>Resource Allocation & CPU Usage Analysis</h3>
-            <p>Machine-learning research utilizing the Bitbrain workload dataset to model cloud server CPU usage fluctuations and explore dynamic resource allocation strategies through clustering algorithms, data normalization, and predictive workload models.</p>
-            <div class="tags">
-              <span class="tag">Python</span>
-              <span class="tag">Machine Learning</span>
-              <span class="tag">Data Analysis</span>
-              <span class="tag">Cloud Computing</span>
-            </div>
-          </div>
-          <div>
-            <span class="muted">Academic research project</span>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       CERTIFICATIONS SECTION
-       ============================================================ -->
-  <section id="certifications">
-    <div class="wrap">
-      <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:16px; margin-bottom:12px;">
-        <div>
-          <div class="eyebrow">Verified Credentials</div>
-          <h2 class="section-title">Professional Certifications & Badges</h2>
-        </div>
-        <div style="font-size:0.88rem; color:var(--muted);">
-          <span>✓ 100% Genuine Certificates</span> · <span>Zero Mock Data</span>
-        </div>
-      </div>
-      <p class="section-sub">Comprehensive portfolio of official certifications earned across NPTEL, NASSCOM FutureSkills Prime, AICTE EduSkills Virtual Internships, AWS, Google, and competitive technical symposia.</p>
-
-      <!-- Dynamic Statistics Display -->
-      <div class="cert-stats">
-        <div class="cert-stat-card">
-          <div class="cert-stat-num" id="statTotal">37</div>
-          <div class="cert-stat-label">Verified Certifications</div>
-          <div class="cert-stat-sub">Across All Domains</div>
-        </div>
-        <div class="cert-stat-card">
-          <div class="cert-stat-num" id="statNptel">6</div>
-          <div class="cert-stat-label">NPTEL Certifications</div>
-          <div class="cert-stat-sub">IIT Madras, KGP, Roorkee</div>
-        </div>
-        <div class="cert-stat-card">
-          <div class="cert-stat-num" id="statNasscom">9</div>
-          <div class="cert-stat-label">NASSCOM Credentials</div>
-          <div class="cert-stat-sub">Gold Badges & Assessments</div>
-        </div>
-        <div class="cert-stat-card">
-          <div class="cert-stat-num" id="statInternships">8</div>
-          <div class="cert-stat-label">Internship Credentials</div>
-          <div class="cert-stat-sub">AICTE, Google, PSNM</div>
-        </div>
-        <div class="cert-stat-card">
-          <div class="cert-stat-num" id="statTechEvents">14</div>
-          <div class="cert-stat-label">Technical & Events</div>
-          <div class="cert-stat-sub">AWS, Google, UiPath, MITS</div>
-        </div>
-      </div>
-
-      <!-- Search & Filter Controls -->
-      <div class="cert-toolbar">
-        <div class="cert-toolbar-top">
-          <!-- Search Box -->
-          <div class="cert-search-box">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="11" cy="11" r="8"></circle>
-              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-            </svg>
-            <input type="text" id="certSearchInput" placeholder="Search by certificate name, skill, topic, or keyword..." />
-          </div>
-
-          <!-- Dropdowns -->
-          <div class="cert-dropdowns">
-            <select id="certOrgSelect" class="cert-select" aria-label="Filter by Organization">
-              <option value="ALL">All Organizations</option>
-              <option value="NPTEL">NPTEL / IITs</option>
-              <option value="NASSCOM">NASSCOM FutureSkills Prime</option>
-              <option value="EduSkills">EduSkills / AICTE / Google</option>
-              <option value="AWS">Amazon Web Services (AWS)</option>
-              <option value="Google">Google / Ambassador</option>
-              <option value="UiPath">UiPath Academy</option>
-              <option value="Simplilearn">Simplilearn SkillUp</option>
-              <option value="Board Infinity">Board Infinity</option>
-              <option value="MITS">MITS / Universities</option>
-              <option value="ISTE">ISTE</option>
-            </select>
-
-            <select id="certYearSelect" class="cert-select" aria-label="Filter by Year">
-              <option value="ALL">All Years</option>
-              <option value="2026">2026</option>
-              <option value="2025">2025</option>
-              <option value="2024">2024</option>
-            </select>
-          </div>
-        </div>
-
-        <!-- Category Filter Pills -->
-        <div class="cert-categories" id="categoryPills">
-          <button class="cat-btn active" data-cat="ALL">
-            All <span class="cat-badge" id="badgeAll">37</span>
-          </button>
-          <button class="cat-btn" data-cat="NPTEL">
-            NPTEL <span class="cat-badge" id="badgeNptel">6</span>
-          </button>
-          <button class="cat-btn" data-cat="NASSCOM">
-            NASSCOM <span class="cat-badge" id="badgeNasscom">9</span>
-          </button>
-          <button class="cat-btn" data-cat="Internships">
-            Internships <span class="cat-badge" id="badgeInternships">8</span>
-          </button>
-          <button class="cat-btn" data-cat="Technical">
-            Technical <span class="cat-badge" id="badgeTechnical">6</span>
-          </button>
-          <button class="cat-btn" data-cat="Events">
-            Events & Extracurricular <span class="cat-badge" id="badgeEvents">8</span>
-          </button>
-        </div>
-      </div>
-
-      <!-- Filter Results Status -->
-      <div class="filter-status">
-        <span id="filterCount">Showing 37 of 37 certificates</span>
-        <button id="resetFiltersBtn" class="reset-btn" style="display:none;">Reset all filters</button>
-      </div>
-
-      <!-- Certificate Cards Grid -->
-      <div class="cert-grid" id="certGrid">
-        <!-- Rendered dynamically by JavaScript -->
-      </div>
-
-      <!-- ============================================================
-           INTERNSHIP EXPERIENCE & OFFER LETTERS SUBSECTION
-           ============================================================ -->
-      <div class="exp-subsection" id="experience">
-        <div class="exp-badge">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-          Industry Engagements & Official Appointments
-        </div>
-        <h3 style="font-size: 1.85rem; margin: 4px 0 8px; font-weight:800;">Internship Experience & Letters of Engagement</h3>
-        <p class="section-sub" style="margin-bottom: 24px;">Official letters of engagement and virtual internship appointment records from AICTE, EduSkills, Google for Developers, and PSNM Innovations. Displayed respectfully with sensitive personal identifiers redacted.</p>
-        
-        <div class="cert-grid" id="offersGrid">
-          <!-- Rendered dynamically by JavaScript -->
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Achievements & Learning Section -->
-  <section id="achievements">
-    <div class="wrap">
-      <h2 class="section-title">Achievements & Milestones</h2>
-      <p class="section-sub">Academic milestones, competitive honours, and continuous learning journey.</p>
-      <div class="timeline">
-        <div class="timeline-item">
-          <strong>Academic Distinction & CGPA</strong>
-          <div class="muted">Maintained a 9.89 CGPA in B.Tech Computer Science and Engineering (Artificial Intelligence) at MITS.</div>
-        </div>
-        <div class="timeline-item">
-          <strong>Academic Excellence Recognition & Gold Medal</strong>
-          <div class="muted">Awarded College Gold Medal, ₹10,000 cash prize, and academic merit certificate for premier first-year academic performance.</div>
-        </div>
-        <div class="timeline-item">
-          <strong>Google Student Ambassador Honor — Top Prompt Creator</strong>
-          <div class="muted">Earned 'Top Prompt Creator (Pitch Night Edition)' honour under the Google Student Ambassador Program for innovative prompting using Nano Banana.</div>
-        </div>
-        <div class="timeline-item">
-          <strong>NPTEL Elite & Silver Honors</strong>
-          <div class="muted">Completed 6 NPTEL national certifications, including Elite + Silver (85%) in Internet of Things (IIT Kharagpur) and Elite + Gold top performance in Incubation & Entrepreneurship (91%).</div>
-        </div>
-        <div class="timeline-item">
-          <strong>NASSCOM FutureSkills Prime Gold Badges</strong>
-          <div class="muted">Cleared official assessments with Gold Category badges in Deep Learning/NLP/AI, Gen AI 101, Prompt Engineering & ChatGPT, and Exploratory Data Analysis.</div>
-        </div>
-        <div class="timeline-item">
-          <strong>National Level Technical Symposia & Hackathons</strong>
-          <div class="muted">Active participant in AURA 2K26 Technical Quiz & Code Crafting, Protothon AI Innovation Sprint, ASHV 2K25 Robotics, and active student member of ISTE.</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="wrap">
-      <div class="contactbox">
-        <div>
-          <h2 style="margin:0 0 6px">Let's Connect</h2>
-          <p class="muted" style="margin:0">I am actively open to AI/ML software engineering roles, internships, and technical collaborations.</p>
-        </div>
-        <div class="actions" style="margin:0">
-          <a class="btn primary" href="https://www.linkedin.com/in/divya-tej-reddy-avula" target="_blank" rel="noreferrer">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64a1.66 1.66 0 0 0-1.66 1.66c0 .92.74 1.66 1.66 1.66.92 0 1.66-.74 1.66-1.66 0-.92-.74-1.66-1.66-1.66Z"/></svg>
-            Connect on LinkedIn
-          </a>
-          <a class="btn" href="https://github.com/24691A3163" target="_blank" rel="noreferrer">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
-            View GitHub
-          </a>
-          <a class="btn outline-accent" href="mailto:avuladivyatejreddy@gmail.com">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-            Email Me
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<!-- Footer -->
-<footer>
-  <div class="wrap footer-content">
-    <div>© <span id="year"></span> <strong>Avula Divya Tej Reddy</strong> · Personal Portfolio & Verified Credentials</div>
-    <div style="font-size:0.84rem;">Built with pride · Hosted on GitHub Pages</div>
-  </div>
-</footer>
-
-<!-- ============================================================
-     PROFESSIONAL PDF VIEWER MODAL
-     ============================================================ -->
-<div class="modal-overlay" id="pdfModal" role="dialog" aria-modal="true" aria-labelledby="modalCertTitle">
-  <div class="modal-container">
-    <!-- Modal Header -->
-    <div class="modal-header">
-      <div class="modal-title-group">
-        <h3 class="modal-cert-title" id="modalCertTitle">Certificate Title</h3>
-        <div class="modal-cert-sub">
-          <span id="modalCertCategory" class="cert-category-pill cat-nptel">Category</span>
-          <span id="modalCertIssuer">Issuing Organization</span>
-          <span id="modalCertYear">Year</span>
-        </div>
-      </div>
-      <div class="modal-controls">
-        <!-- Zoom Out -->
-        <button class="modal-ctrl-btn" id="zoomOutBtn" title="Zoom Out" aria-label="Zoom Out">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
-        </button>
-        <!-- Zoom Reset -->
-        <button class="modal-ctrl-btn" id="zoomResetBtn" title="Reset Zoom (100%)" aria-label="Reset Zoom">
-          <span style="font-size:0.75rem; font-weight:700;">100%</span>
-        </button>
-        <!-- Zoom In -->
-        <button class="modal-ctrl-btn" id="zoomInBtn" title="Zoom In" aria-label="Zoom In">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
-        </button>
-        <!-- Open in New Tab -->
-        <a class="modal-ctrl-btn" id="modalNewTabBtn" href="#" target="_blank" rel="noopener noreferrer" title="Open in New Tab" aria-label="Open in New Tab">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-        </a>
-        <!-- Download PDF -->
-        <a class="modal-ctrl-btn" id="modalDownloadBtn" href="#" download title="Download Original PDF" aria-label="Download Original PDF">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-        </a>
-        <!-- Close Modal -->
-        <button class="modal-ctrl-btn close" id="modalCloseBtn" title="Close (Esc)" aria-label="Close">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-        </button>
-      </div>
-    </div>
-
-    <!-- Modal Body (Iframe PDF Viewer) -->
-    <div class="modal-body">
-      <div class="pdf-frame-wrapper" id="pdfWrapper">
-        <iframe id="pdfFrame" src="" title="Certificate Preview"></iframe>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Load certificates metadata script -->
-<script src="certificates.js"></script>
-
-<!-- Main Application Script -->
-<script>
-  // Set copyright year
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-  (function() {
-    // Check if certificatesData is available
-    if (typeof certificatesData === 'undefined' || !Array.isArray(certificatesData)) {
-      console.error('Certificates data not loaded properly.');
-      return;
-    }
-
-    // Separate verified certificates from offer letters
-    const verifiedCerts = certificatesData.filter(c => !c.isOfferLetter);
-    const offerLetters = certificatesData.filter(c => c.isOfferLetter);
-
-    // Compute exact stats dynamically from data
-    const totalVerified = verifiedCerts.length;
-    const nptelCount = verifiedCerts.filter(c => c.category === 'NPTEL').length;
-    const nasscomCount = verifiedCerts.filter(c => c.category === 'NASSCOM').length;
-    const internshipsCount = verifiedCerts.filter(c => c.category === 'Internships').length;
-    const technicalCount = verifiedCerts.filter(c => c.category === 'Technical').length;
-    const eventsCount = verifiedCerts.filter(c => c.category === 'Events').length;
-
-    // Update stat numbers in UI
-    document.getElementById('statTotal').textContent = totalVerified;
-    document.getElementById('statNptel').textContent = nptelCount;
-    document.getElementById('statNasscom').textContent = nasscomCount;
-    document.getElementById('statInternships').textContent = internshipsCount;
-    document.getElementById('statTechEvents').textContent = technicalCount + eventsCount;
-
-    document.getElementById('heroCertCount').textContent = totalVerified;
-    document.getElementById('navCertCount').textContent = totalVerified;
-
-    // Update category badge counts
-    document.getElementById('badgeAll').textContent = totalVerified;
-    document.getElementById('badgeNptel').textContent = nptelCount;
-    document.getElementById('badgeNasscom').textContent = nasscomCount;
-    document.getElementById('badgeInternships').textContent = internshipsCount;
-    document.getElementById('badgeTechnical').textContent = technicalCount;
-    document.getElementById('badgeEvents').textContent = eventsCount;
-
-    // State for filtering
-    let currentCategory = 'ALL';
-    let currentOrg = 'ALL';
-    let currentYear = 'ALL';
-    let searchQuery = '';
-
-    // DOM Elements
-    const certGrid = document.getElementById('certGrid');
-    const offersGrid = document.getElementById('offersGrid');
-    const searchInput = document.getElementById('certSearchInput');
-    const orgSelect = document.getElementById('certOrgSelect');
-    const yearSelect = document.getElementById('certYearSelect');
-    const categoryPills = document.getElementById('categoryPills');
-    const filterCount = document.getElementById('filterCount');
-    const resetFiltersBtn = document.getElementById('resetFiltersBtn');
-
-    // Modal Elements
-    const modal = document.getElementById('pdfModal');
-    const modalTitle = document.getElementById('modalCertTitle');
-    const modalCategory = document.getElementById('modalCertCategory');
-    const modalIssuer = document.getElementById('modalCertIssuer');
-    const modalYear = document.getElementById('modalCertYear');
-    const modalNewTabBtn = document.getElementById('modalNewTabBtn');
-    const modalDownloadBtn = document.getElementById('modalDownloadBtn');
-    const modalCloseBtn = document.getElementById('modalCloseBtn');
-    const pdfFrame = document.getElementById('pdfFrame');
-    const pdfWrapper = document.getElementById('pdfWrapper');
-    const zoomInBtn = document.getElementById('zoomInBtn');
-    const zoomOutBtn = document.getElementById('zoomOutBtn');
-    const zoomResetBtn = document.getElementById('zoomResetBtn');
-
-    let currentZoom = 1.0;
-
-    // Helper: category pill class
-    function getCategoryClass(cat) {
-      switch(cat) {
-        case 'NPTEL': return 'cat-nptel';
-        case 'NASSCOM': return 'cat-nasscom';
-        case 'Internships': return 'cat-internships';
-        case 'Technical': return 'cat-technical';
-        case 'Events': return 'cat-events';
-        case 'Offer Letters': return 'cat-offers';
-        default: return 'cat-nptel';
+      .cert-stats {
+        grid-template-columns: repeat(3, 1fr);
       }
     }
 
-    // Helper: badge style class
-    function getScoreBadgeClass(badge) {
-      if (!badge) return '';
-      const b = badge.toLowerCase();
-      if (b.includes('gold')) return 'gold';
-      if (b.includes('outstanding') || b.includes('grade o') || b.includes('verified experience')) return 'green';
-      if (b.includes('silver') || b.includes('elite') || b.includes('official') || b.includes('google')) return 'blue';
-      return '';
+    @media (max-width: 760px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cert-stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .cert-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .navlinks {
+        gap: 12px;
+        font-size: .84rem;
+      }
+
+      nav {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      h1 {
+        letter-spacing: -1px;
+      }
+
+      .cert-toolbar-top {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .cert-search-box {
+        width: 100%;
+      }
+
+      .cert-dropdowns {
+        width: 100%;
+      }
+
+      .cert-select {
+        flex: 1;
+      }
+
+      .modal-container {
+        width: 98vw;
+        height: 95vh;
+        border-radius: 14px;
+      }
+
+      .modal-header {
+        padding: 12px 14px;
+      }
+
+      .modal-ctrl-btn {
+        width: 32px;
+        height: 32px;
+      }
     }
 
-    // Helper: generate properly encoded URL for GitHub Pages / static hosting
-    function getPdfUrl(cert) {
-      if (!cert) return '';
-      if (cert.encodedUrl) return cert.encodedUrl;
-      const path = cert.pdfPath || ('public/certificates/' + (cert.target_subpath || ''));
-      const normalized = path.replace(/^\.?\/?(public\/)?/, 'public/');
-      return normalized.split('/').map(part => encodeURIComponent(part)).join('/');
+    @media (max-width: 480px) {
+      .cert-stats {
+        grid-template-columns: 1fr;
+      }
+
+      .cert-card-actions {
+        grid-template-columns: 1fr;
+      }
     }
+  </style>
+</head>
 
-    // Create Certificate Card HTML
-    function createCertCard(cert) {
-      const card = document.createElement('article');
-      card.className = 'cert-card';
-      card.dataset.id = cert.id;
+<body>
 
-      const catClass = getCategoryClass(cert.category);
-      const scoreClass = getScoreBadgeClass(cert.badge || cert.score);
-      const badgeText = cert.badge || cert.score || cert.year;
+  <!-- Navigation Header -->
+  <header>
+    <div class="wrap">
+      <nav>
+        <a class="brand" href="#home">DIVYA <span>TEJ.</span></a>
+        <div class="navlinks">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#certifications">Certifications <span class="nav-badge" id="navCertCount">37</span></a>
+          <a href="#experience">Internships</a>
+          <a href="#achievements">Achievements</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-      const skillsHtml = Array.isArray(cert.skills) && cert.skills.length > 0
-        ? `<div class="cert-skills">${cert.skills.map(s => `<span class="cert-skill-tag">${escapeHtml(s)}</span>`).join('')}</div>`
-        : '';
+  <main>
+    <!-- Hero Section -->
+    <div class="wrap hero" id="home">
+      <div>
+        <div class="eyebrow">CSE (Artificial Intelligence) Student · Developer</div>
+        <h1>Hi, I'm<br><span>Avula Divya Tej Reddy</span></h1>
+        <p class="lead">Computer Science and Engineering student specializing in Artificial Intelligence. Passionate
+          about engineering production-ready software solutions, deep neural networks, distributed systems, and
+          real-world AI/ML applications.</p>
+        <div class="actions">
+          <a class="btn primary" href="#certifications">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 15l-2 5l9-13h-6l2-5l-9 13h6z" />
+            </svg>
+            View Verified Certifications
+          </a>
+          <a class="btn" href="#projects">Explore Projects</a>
+          <a class="btn outline-accent" href="https://www.linkedin.com/in/divya-tej-reddy-avula" target="_blank"
+            rel="noreferrer">LinkedIn profile ↗</a>
+          <a class="btn" href="https://github.com/24691A3163" target="_blank" rel="noreferrer">GitHub ↗</a>
+        </div>
+      </div>
+      <aside class="profile-card">
+        <div class="initials">DT</div>
+        <h2 style="margin:0 0 4px; font-size:1.35rem">Aspiring Software & AI/ML Engineer</h2>
+        <p class="muted" style="margin:0; font-size:0.92rem">Focused on deep learning, full-stack engineering, and
+          industry-backed research credentials.</p>
+        <div class="statgrid">
+          <div class="stat">
+            <strong>9.69</strong>
+            <small>CGPA (B.Tech Record)</small>
+          </div>
+          <div class="stat">
+            <strong id="heroCertCount">37</strong>
+            <small>Verified Certifications</small>
+          </div>
+          <div class="stat">
+            <strong>CSE (AI)</strong>
+            <small>Academic Programme</small>
+          </div>
+          <div class="stat">
+            <strong>4+</strong>
+            <small>Virtual Internships</small>
+          </div>
+        </div>
+      </aside>
+    </div>
 
-      const pdfUrl = getPdfUrl(cert);
-      const safeTitle = (cert.title || 'Certificate').replace(/[^a-zA-Z0-9_\-\.]/g, '_');
-      const downloadFilename = escapeHtml(safeTitle) + '.pdf';
+    <!-- About Section -->
+    <section id="about">
+      <div class="wrap">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-sub">A little about my academic background, technical focus, and aspirations.</p>
+        <div class="card">
+          <p>I am pursuing a B.Tech in Computer Science and Engineering (Artificial Intelligence) at Madanapalle
+            Institute of Technology & Science (MITS), Andhra Pradesh. I have maintained a strong academic track record
+            (9.89 CGPA) combined with consistent hands-on implementation across modern AI/ML frameworks, distributed
+            systems, cloud computing, and full-stack software development.</p>
+          <p class="muted" style="margin-bottom:0">Core Competencies: Machine Learning · Deep Learning (CNNs,
+            Transformers, VGG-16) · Full Stack Web Development (React, FastAPI, Django, Spring Boot) · Distributed
+            Systems · Cloud (AWS) · Data Science & Analytics</p>
+        </div>
+      </div>
+    </section>
 
-      card.innerHTML = `
+    <!-- Technical Skills Section -->
+    <section id="skills">
+      <div class="wrap">
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-sub">Programming languages, AI/ML tools, frameworks, and developer technologies.</p>
+        <div class="skills">
+          <span class="skill">Python</span>
+          <span class="skill">Java</span>
+          <span class="skill">C</span>
+          <span class="skill">Data Structures & Algorithms</span>
+          <span class="skill">PyTorch & TensorFlow</span>
+          <span class="skill">Deep Learning (CNNs, VGG-16)</span>
+          <span class="skill">ONNX Runtime & Edge AI</span>
+          <span class="skill">Natural Language Processing (NLP)</span>
+          <span class="skill">Generative AI & LLMs</span>
+          <span class="skill">Prompt Engineering</span>
+          <span class="skill">React & TypeScript</span>
+          <span class="skill">Tailwind CSS</span>
+          <span class="skill">FastAPI</span>
+          <span class="skill">Django</span>
+          <span class="skill">Spring Boot</span>
+          <span class="skill">SQL & Relational Databases</span>
+          <span class="skill">Supabase & PostgreSQL</span>
+          <span class="skill">AWS Cloud Essentials</span>
+          <span class="skill">UiPath RPA</span>
+          <span class="skill">Git & GitHub</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects">
+      <div class="wrap">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-sub">Real-world AI/ML systems, full-stack platforms, and research applications.</p>
+        <div class="grid">
+          <!-- Project 1: Intelligent Crop Recommendation System -->
+          <article class="card">
+            <div>
+              <div class="tags"><span class="tag"
+                  style="background:rgba(16,185,129,.15); color:#34d399; border-color:rgba(16,185,129,.3);">AI & Deep
+                  Learning</span></div>
+              <h3>Intelligent Crop Recommendation System using AI & DL Models</h3>
+              <p>Production-grade, full-stack agricultural decision support system powered by 12 trained Machine
+                Learning and Deep Neural Network architectures, featuring a novel <strong>Hybrid XGBoost + ANN
+                  probability fusion model achieving 99.55% test accuracy</strong>. Integrated with a high-performance
+                FastAPI inference backend, Supabase PostgreSQL with Row Level Security (RLS), and a modern React
+                dashboard with Recharts agronomic analytics.</p>
+              <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">Deep Learning (ANN)</span>
+                <span class="tag">XGBoost</span>
+                <span class="tag">Random Forest (99.55%)</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">Supabase RLS</span>
+                <span class="tag">React</span>
+                <span class="tag">Recharts</span>
+              </div>
+            </div>
+            <div>
+              <span class="muted" style="font-size:0.86rem; display:block; margin-bottom:8px;">12 Trained AI Models ·
+                Full Stack Precision Agriculture</span>
+              <span class="cardlink" style="color:var(--green);">Hybrid AI/DL Research Project ✓</span>
+            </div>
+          </article>
+
+          <!-- Project 2: Mango Leaf Disease Prediction -->
+          <article class="card">
+            <div>
+              <div class="tags"><span class="tag"
+                  style="background:rgba(168,85,247,.15); color:#c084fc; border-color:rgba(168,85,247,.3);">Computer
+                  Vision</span></div>
+              <h3>Mango Leaf Disease Prediction using VGG-16 Neural Networks</h3>
+              <p>Deep transfer learning vision system leveraging fine-tuned <strong>VGG-16 Convolutional Neural
+                  Networks</strong> to classify and diagnose mango leaf fungal and bacterial diseases. Converted to ONNX
+                format for zero-latency, private, client-side edge inference directly in the browser via <strong>ONNX
+                  Runtime Web</strong>, wrapped with a clean React + TypeScript diagnostic UI and real-time confidence
+                scores.</p>
+              <div class="tags">
+                <span class="tag">PyTorch</span>
+                <span class="tag">VGG-16</span>
+                <span class="tag">ONNX Runtime Web</span>
+                <span class="tag">Computer Vision</span>
+                <span class="tag">Transfer Learning</span>
+                <span class="tag">React</span>
+                <span class="tag">TypeScript</span>
+              </div>
+            </div>
+            <div>
+              <span class="muted" style="font-size:0.86rem; display:block; margin-bottom:8px;">Edge AI Inference in
+                Browser · Zero Backend Latency</span>
+              <span class="cardlink" style="color:var(--purple);">Deep Transfer Learning Project ✓</span>
+            </div>
+          </article>
+
+          <!-- Project 3: SDG 4 Education Insights Hub -->
+          <article class="card">
+            <div>
+              <div class="tags"><span class="tag">Verified Industry Project</span></div>
+              <h3>SDG 4 Education Insights Hub</h3>
+              <p>A web-based education insights platform focused on UN SDG 4 (Quality Education). Developed under the
+                PSNM Innovations JobXperience™ program, synthesizing real data from data.gov.in, education indicators,
+                and community feedback to support data-informed regional educational interventions.</p>
+              <div class="tags">
+                <span class="tag">React</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Tailwind CSS</span>
+                <span class="tag">Supabase</span>
+                <span class="tag">Data Analysis</span>
+              </div>
+            </div>
+            <div>
+              <a class="cardlink" href="https://sdg4-eduinsightshub.lovable.app" target="_blank" rel="noreferrer">View
+                live project ↗</a>
+            </div>
+          </article>
+
+          <!-- Project 4: Landslide & Flash-Flood Early Warning System -->
+          <article class="card">
+            <div>
+              <div class="tags"><span class="tag">Disaster Management</span></div>
+              <h3>Landslide & Flash-Flood Early Warning System</h3>
+              <p>An early-warning project concept for mountainous and hilly regions, combining rainfall threshold
+                statistics, soil-moisture sensor metrics, terrain slope parameters, and historical flood information to
+                generate village-level risk assessments.</p>
+              <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">Machine Learning</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">Geo Data</span>
+              </div>
+            </div>
+            <div>
+              <span class="muted">SIH Project / In Progress</span>
+            </div>
+          </article>
+
+          <!-- Project 5: Resource Allocation & CPU Usage Analysis -->
+          <article class="card" style="grid-column: 1 / -1;">
+            <div>
+              <div class="tags"><span class="tag">Academic Research</span></div>
+              <h3>Resource Allocation & CPU Usage Analysis</h3>
+              <p>Machine-learning research utilizing the Bitbrain workload dataset to model cloud server CPU usage
+                fluctuations and explore dynamic resource allocation strategies through clustering algorithms, data
+                normalization, and predictive workload models.</p>
+              <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">Machine Learning</span>
+                <span class="tag">Data Analysis</span>
+                <span class="tag">Cloud Computing</span>
+              </div>
+            </div>
+            <div>
+              <span class="muted">Academic research project</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       CERTIFICATIONS SECTION
+       ============================================================ -->
+    <section id="certifications">
+      <div class="wrap">
+        <div
+          style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:16px; margin-bottom:12px;">
+          <div>
+            <div class="eyebrow">Verified Credentials</div>
+            <h2 class="section-title">Professional Certifications & Badges</h2>
+          </div>
+          <div style="font-size:0.88rem; color:var(--muted);">
+            <span>✓ 100% Genuine Certificates</span> · <span>Zero Mock Data</span>
+          </div>
+        </div>
+        <p class="section-sub">Comprehensive portfolio of official certifications earned across NPTEL, NASSCOM
+          FutureSkills Prime, AICTE EduSkills Virtual Internships, AWS, Google, and competitive technical symposia.</p>
+
+        <!-- Dynamic Statistics Display -->
+        <div class="cert-stats">
+          <div class="cert-stat-card">
+            <div class="cert-stat-num" id="statTotal">37</div>
+            <div class="cert-stat-label">Verified Certifications</div>
+            <div class="cert-stat-sub">Across All Domains</div>
+          </div>
+          <div class="cert-stat-card">
+            <div class="cert-stat-num" id="statNptel">6</div>
+            <div class="cert-stat-label">NPTEL Certifications</div>
+            <div class="cert-stat-sub">IIT Madras, KGP, Roorkee</div>
+          </div>
+          <div class="cert-stat-card">
+            <div class="cert-stat-num" id="statNasscom">9</div>
+            <div class="cert-stat-label">NASSCOM Credentials</div>
+            <div class="cert-stat-sub">Gold Badges & Assessments</div>
+          </div>
+          <div class="cert-stat-card">
+            <div class="cert-stat-num" id="statInternships">8</div>
+            <div class="cert-stat-label">Internship Credentials</div>
+            <div class="cert-stat-sub">AICTE, Google, PSNM</div>
+          </div>
+          <div class="cert-stat-card">
+            <div class="cert-stat-num" id="statTechEvents">14</div>
+            <div class="cert-stat-label">Technical & Events</div>
+            <div class="cert-stat-sub">AWS, Google, UiPath, MITS</div>
+          </div>
+        </div>
+
+        <!-- Search & Filter Controls -->
+        <div class="cert-toolbar">
+          <div class="cert-toolbar-top">
+            <!-- Search Box -->
+            <div class="cert-search-box">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <input type="text" id="certSearchInput"
+                placeholder="Search by certificate name, skill, topic, or keyword..." />
+            </div>
+
+            <!-- Dropdowns -->
+            <div class="cert-dropdowns">
+              <select id="certOrgSelect" class="cert-select" aria-label="Filter by Organization">
+                <option value="ALL">All Organizations</option>
+                <option value="NPTEL">NPTEL / IITs</option>
+                <option value="NASSCOM">NASSCOM FutureSkills Prime</option>
+                <option value="EduSkills">EduSkills / AICTE / Google</option>
+                <option value="AWS">Amazon Web Services (AWS)</option>
+                <option value="Google">Google / Ambassador</option>
+                <option value="UiPath">UiPath Academy</option>
+                <option value="Simplilearn">Simplilearn SkillUp</option>
+                <option value="Board Infinity">Board Infinity</option>
+                <option value="MITS">MITS / Universities</option>
+                <option value="ISTE">ISTE</option>
+              </select>
+
+              <select id="certYearSelect" class="cert-select" aria-label="Filter by Year">
+                <option value="ALL">All Years</option>
+                <option value="2026">2026</option>
+                <option value="2025">2025</option>
+                <option value="2024">2024</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Category Filter Pills -->
+          <div class="cert-categories" id="categoryPills">
+            <button class="cat-btn active" data-cat="ALL">
+              All <span class="cat-badge" id="badgeAll">37</span>
+            </button>
+            <button class="cat-btn" data-cat="NPTEL">
+              NPTEL <span class="cat-badge" id="badgeNptel">6</span>
+            </button>
+            <button class="cat-btn" data-cat="NASSCOM">
+              NASSCOM <span class="cat-badge" id="badgeNasscom">9</span>
+            </button>
+            <button class="cat-btn" data-cat="Internships">
+              Internships <span class="cat-badge" id="badgeInternships">8</span>
+            </button>
+            <button class="cat-btn" data-cat="Technical">
+              Technical <span class="cat-badge" id="badgeTechnical">6</span>
+            </button>
+            <button class="cat-btn" data-cat="Events">
+              Events & Extracurricular <span class="cat-badge" id="badgeEvents">8</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Filter Results Status -->
+        <div class="filter-status">
+          <span id="filterCount">Showing 37 of 37 certificates</span>
+          <button id="resetFiltersBtn" class="reset-btn" style="display:none;">Reset all filters</button>
+        </div>
+
+        <!-- Certificate Cards Grid -->
+        <div class="cert-grid" id="certGrid">
+          <!-- Rendered dynamically by JavaScript -->
+        </div>
+
+        <!-- ============================================================
+           INTERNSHIP EXPERIENCE & OFFER LETTERS SUBSECTION
+           ============================================================ -->
+        <div class="exp-subsection" id="experience">
+          <div class="exp-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+            </svg>
+            Industry Engagements & Official Appointments
+          </div>
+          <h3 style="font-size: 1.85rem; margin: 4px 0 8px; font-weight:800;">Internship Experience & Letters of
+            Engagement</h3>
+          <p class="section-sub" style="margin-bottom: 24px;">Official letters of engagement and virtual internship
+            appointment records from AICTE, EduSkills, Google for Developers, and PSNM Innovations. Displayed
+            respectfully with sensitive personal identifiers redacted.</p>
+
+          <div class="cert-grid" id="offersGrid">
+            <!-- Rendered dynamically by JavaScript -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Achievements & Learning Section -->
+    <section id="achievements">
+      <div class="wrap">
+        <h2 class="section-title">Achievements & Milestones</h2>
+        <p class="section-sub">Academic milestones, competitive honours, and continuous learning journey.</p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <strong>Academic Distinction & CGPA</strong>
+            <div class="muted">Maintained a 9.89 CGPA in B.Tech Computer Science and Engineering (Artificial
+              Intelligence) at MITS.</div>
+          </div>
+          <div class="timeline-item">
+            <strong>Academic Excellence Recognition & Gold Medal</strong>
+            <div class="muted">Awarded College Gold Medal, ₹10,000 cash prize, and academic merit certificate for
+              premier first-year academic performance.</div>
+          </div>
+          <div class="timeline-item">
+            <strong>Google Student Ambassador Honor — Top Prompt Creator</strong>
+            <div class="muted">Earned 'Top Prompt Creator (Pitch Night Edition)' honour under the Google Student
+              Ambassador Program for innovative prompting using Nano Banana.</div>
+          </div>
+          <div class="timeline-item">
+            <strong>NPTEL Elite & Silver Honors</strong>
+            <div class="muted">Completed 6 NPTEL national certifications, including Elite + Silver (85%) in Internet of
+              Things (IIT Kharagpur) and Elite + Gold top performance in Incubation & Entrepreneurship (91%).</div>
+          </div>
+          <div class="timeline-item">
+            <strong>NASSCOM FutureSkills Prime Gold Badges</strong>
+            <div class="muted">Cleared official assessments with Gold Category badges in Deep Learning/NLP/AI, Gen AI
+              101, Prompt Engineering & ChatGPT, and Exploratory Data Analysis.</div>
+          </div>
+          <div class="timeline-item">
+            <strong>National Level Technical Symposia & Hackathons</strong>
+            <div class="muted">Active participant in AURA 2K26 Technical Quiz & Code Crafting, Protothon AI Innovation
+              Sprint, ASHV 2K25 Robotics, and active student member of ISTE.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="wrap">
+        <div class="contactbox">
+          <div>
+            <h2 style="margin:0 0 6px">Let's Connect</h2>
+            <p class="muted" style="margin:0">I am actively open to AI/ML software engineering roles, internships, and
+              technical collaborations.</p>
+          </div>
+          <div class="actions" style="margin:0">
+            <a class="btn primary" href="https://www.linkedin.com/in/divya-tej-reddy-avula" target="_blank"
+              rel="noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64a1.66 1.66 0 0 0-1.66 1.66c0 .92.74 1.66 1.66 1.66.92 0 1.66-.74 1.66-1.66 0-.92-.74-1.66-1.66-1.66Z" />
+              </svg>
+              Connect on LinkedIn
+            </a>
+            <a class="btn" href="https://github.com/24691A3163" target="_blank" rel="noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z" />
+              </svg>
+              View GitHub
+            </a>
+            <a class="btn outline-accent" href="mailto:avuladivyatejreddy@gmail.com">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              Email Me
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="wrap footer-content">
+      <div>© <span id="year"></span> <strong>Avula Divya Tej Reddy</strong> · Personal Portfolio & Verified Credentials
+      </div>
+      <div style="font-size:0.84rem;">Built with pride · Hosted on GitHub Pages</div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+     PROFESSIONAL PDF VIEWER MODAL
+     ============================================================ -->
+  <div class="modal-overlay" id="pdfModal" role="dialog" aria-modal="true" aria-labelledby="modalCertTitle">
+    <div class="modal-container">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h3 class="modal-cert-title" id="modalCertTitle">Certificate Title</h3>
+          <div class="modal-cert-sub">
+            <span id="modalCertCategory" class="cert-category-pill cat-nptel">Category</span>
+            <span id="modalCertIssuer">Issuing Organization</span>
+            <span id="modalCertYear">Year</span>
+          </div>
+        </div>
+        <div class="modal-controls">
+          <!-- Zoom Out -->
+          <button class="modal-ctrl-btn" id="zoomOutBtn" title="Zoom Out" aria-label="Zoom Out">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <!-- Zoom Reset -->
+          <button class="modal-ctrl-btn" id="zoomResetBtn" title="Reset Zoom (100%)" aria-label="Reset Zoom">
+            <span style="font-size:0.75rem; font-weight:700;">100%</span>
+          </button>
+          <!-- Zoom In -->
+          <button class="modal-ctrl-btn" id="zoomInBtn" title="Zoom In" aria-label="Zoom In">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <!-- Open in New Tab -->
+          <a class="modal-ctrl-btn" id="modalNewTabBtn" href="#" target="_blank" rel="noopener noreferrer"
+            title="Open in New Tab" aria-label="Open in New Tab">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+          <!-- Download PDF -->
+          <a class="modal-ctrl-btn" id="modalDownloadBtn" href="#" download title="Download Original PDF"
+            aria-label="Download Original PDF">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+          </a>
+          <!-- Close Modal -->
+          <button class="modal-ctrl-btn close" id="modalCloseBtn" title="Close (Esc)" aria-label="Close">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Modal Body (Iframe PDF Viewer) -->
+      <div class="modal-body">
+        <div class="pdf-frame-wrapper" id="pdfWrapper">
+          <iframe id="pdfFrame" src="" title="Certificate Preview"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Load certificates metadata script -->
+  <script src="certificates.js"></script>
+
+  <!-- Main Application Script -->
+  <script>
+    // Set copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    (function () {
+      // Check if certificatesData is available
+      if (typeof certificatesData === 'undefined' || !Array.isArray(certificatesData)) {
+        console.error('Certificates data not loaded properly.');
+        return;
+      }
+
+      // Separate verified certificates from offer letters
+      const verifiedCerts = certificatesData.filter(c => !c.isOfferLetter);
+      const offerLetters = certificatesData.filter(c => c.isOfferLetter);
+
+      // Compute exact stats dynamically from data
+      const totalVerified = verifiedCerts.length;
+      const nptelCount = verifiedCerts.filter(c => c.category === 'NPTEL').length;
+      const nasscomCount = verifiedCerts.filter(c => c.category === 'NASSCOM').length;
+      const internshipsCount = verifiedCerts.filter(c => c.category === 'Internships').length;
+      const technicalCount = verifiedCerts.filter(c => c.category === 'Technical').length;
+      const eventsCount = verifiedCerts.filter(c => c.category === 'Events').length;
+
+      // Update stat numbers in UI
+      document.getElementById('statTotal').textContent = totalVerified;
+      document.getElementById('statNptel').textContent = nptelCount;
+      document.getElementById('statNasscom').textContent = nasscomCount;
+      document.getElementById('statInternships').textContent = internshipsCount;
+      document.getElementById('statTechEvents').textContent = technicalCount + eventsCount;
+
+      document.getElementById('heroCertCount').textContent = totalVerified;
+      document.getElementById('navCertCount').textContent = totalVerified;
+
+      // Update category badge counts
+      document.getElementById('badgeAll').textContent = totalVerified;
+      document.getElementById('badgeNptel').textContent = nptelCount;
+      document.getElementById('badgeNasscom').textContent = nasscomCount;
+      document.getElementById('badgeInternships').textContent = internshipsCount;
+      document.getElementById('badgeTechnical').textContent = technicalCount;
+      document.getElementById('badgeEvents').textContent = eventsCount;
+
+      // State for filtering
+      let currentCategory = 'ALL';
+      let currentOrg = 'ALL';
+      let currentYear = 'ALL';
+      let searchQuery = '';
+
+      // DOM Elements
+      const certGrid = document.getElementById('certGrid');
+      const offersGrid = document.getElementById('offersGrid');
+      const searchInput = document.getElementById('certSearchInput');
+      const orgSelect = document.getElementById('certOrgSelect');
+      const yearSelect = document.getElementById('certYearSelect');
+      const categoryPills = document.getElementById('categoryPills');
+      const filterCount = document.getElementById('filterCount');
+      const resetFiltersBtn = document.getElementById('resetFiltersBtn');
+
+      // Modal Elements
+      const modal = document.getElementById('pdfModal');
+      const modalTitle = document.getElementById('modalCertTitle');
+      const modalCategory = document.getElementById('modalCertCategory');
+      const modalIssuer = document.getElementById('modalCertIssuer');
+      const modalYear = document.getElementById('modalCertYear');
+      const modalNewTabBtn = document.getElementById('modalNewTabBtn');
+      const modalDownloadBtn = document.getElementById('modalDownloadBtn');
+      const modalCloseBtn = document.getElementById('modalCloseBtn');
+      const pdfFrame = document.getElementById('pdfFrame');
+      const pdfWrapper = document.getElementById('pdfWrapper');
+      const zoomInBtn = document.getElementById('zoomInBtn');
+      const zoomOutBtn = document.getElementById('zoomOutBtn');
+      const zoomResetBtn = document.getElementById('zoomResetBtn');
+
+      let currentZoom = 1.0;
+
+      // Helper: category pill class
+      function getCategoryClass(cat) {
+        switch (cat) {
+          case 'NPTEL': return 'cat-nptel';
+          case 'NASSCOM': return 'cat-nasscom';
+          case 'Internships': return 'cat-internships';
+          case 'Technical': return 'cat-technical';
+          case 'Events': return 'cat-events';
+          case 'Offer Letters': return 'cat-offers';
+          default: return 'cat-nptel';
+        }
+      }
+
+      // Helper: badge style class
+      function getScoreBadgeClass(badge) {
+        if (!badge) return '';
+        const b = badge.toLowerCase();
+        if (b.includes('gold')) return 'gold';
+        if (b.includes('outstanding') || b.includes('grade o') || b.includes('verified experience')) return 'green';
+        if (b.includes('silver') || b.includes('elite') || b.includes('official') || b.includes('google')) return 'blue';
+        return '';
+      }
+
+      // Helper: generate properly encoded URL for GitHub Pages / static hosting
+      function getPdfUrl(cert) {
+        if (!cert) return '';
+        if (cert.encodedUrl) return cert.encodedUrl;
+        const path = cert.pdfPath || ('public/certificates/' + (cert.target_subpath || ''));
+        const normalized = path.replace(/^\.?\/?(public\/)?/, 'public/');
+        return normalized.split('/').map(part => encodeURIComponent(part)).join('/');
+      }
+
+      // Create Certificate Card HTML
+      function createCertCard(cert) {
+        const card = document.createElement('article');
+        card.className = 'cert-card';
+        card.dataset.id = cert.id;
+
+        const catClass = getCategoryClass(cert.category);
+        const scoreClass = getScoreBadgeClass(cert.badge || cert.score);
+        const badgeText = cert.badge || cert.score || cert.year;
+
+        const skillsHtml = Array.isArray(cert.skills) && cert.skills.length > 0
+          ? `<div class="cert-skills">${cert.skills.map(s => `<span class="cert-skill-tag">${escapeHtml(s)}</span>`).join('')}</div>`
+          : '';
+
+        const pdfUrl = getPdfUrl(cert);
+        const safeTitle = (cert.title || 'Certificate').replace(/[^a-zA-Z0-9_\-\.]/g, '_');
+        const downloadFilename = escapeHtml(safeTitle) + '.pdf';
+
+        card.innerHTML = `
         <div>
           <div class="cert-card-header">
             <span class="cert-category-pill ${catClass}">${escapeHtml(cert.category)}</span>
@@ -1534,25 +1845,25 @@
           </a>
         </div>
       `;
-      return card;
-    }
+        return card;
+      }
 
-    // Create Offer Letter Card HTML
-    function createOfferCard(offer) {
-      const card = document.createElement('article');
-      card.className = 'cert-card';
-      card.style.borderColor = 'rgba(99, 102, 241, 0.25)';
-      card.dataset.id = offer.id;
+      // Create Offer Letter Card HTML
+      function createOfferCard(offer) {
+        const card = document.createElement('article');
+        card.className = 'cert-card';
+        card.style.borderColor = 'rgba(99, 102, 241, 0.25)';
+        card.dataset.id = offer.id;
 
-      const skillsHtml = Array.isArray(offer.skills) && offer.skills.length > 0
-        ? `<div class="cert-skills">${offer.skills.map(s => `<span class="cert-skill-tag">${escapeHtml(s)}</span>`).join('')}</div>`
-        : '';
+        const skillsHtml = Array.isArray(offer.skills) && offer.skills.length > 0
+          ? `<div class="cert-skills">${offer.skills.map(s => `<span class="cert-skill-tag">${escapeHtml(s)}</span>`).join('')}</div>`
+          : '';
 
-      const pdfUrl = getPdfUrl(offer);
-      const safeTitle = (offer.title || 'Offer_Letter').replace(/[^a-zA-Z0-9_\-\.]/g, '_');
-      const downloadFilename = escapeHtml(safeTitle) + '.pdf';
+        const pdfUrl = getPdfUrl(offer);
+        const safeTitle = (offer.title || 'Offer_Letter').replace(/[^a-zA-Z0-9_\-\.]/g, '_');
+        const downloadFilename = escapeHtml(safeTitle) + '.pdf';
 
-      card.innerHTML = `
+        card.innerHTML = `
         <div>
           <div class="cert-card-header">
             <span class="cert-category-pill cat-offers">Letter of Engagement</span>
@@ -1583,88 +1894,88 @@
           </a>
         </div>
       `;
-      return card;
-    }
+        return card;
+      }
 
-    // Escape HTML helper
-    function escapeHtml(str) {
-      if (!str) return '';
-      return String(str)
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;')
-        .replace(/'/g, '&#39;');
-    }
+      // Escape HTML helper
+      function escapeHtml(str) {
+        if (!str) return '';
+        return String(str)
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;')
+          .replace(/'/g, '&#39;');
+      }
 
-    // Filter Logic
-    function filterCertificates() {
-      const q = searchQuery.toLowerCase().trim();
+      // Filter Logic
+      function filterCertificates() {
+        const q = searchQuery.toLowerCase().trim();
 
-      const filtered = verifiedCerts.filter(cert => {
-        // Category check
-        if (currentCategory !== 'ALL' && cert.category !== currentCategory) {
-          return false;
-        }
-
-        // Year check
-        if (currentYear !== 'ALL' && cert.year !== currentYear) {
-          return false;
-        }
-
-        // Organization check
-        if (currentOrg !== 'ALL') {
-          const issuer = (cert.issuer || '').toLowerCase();
-          const target = currentOrg.toLowerCase();
-          if (target === 'mits') {
-            if (!issuer.includes('mits') && !issuer.includes('madanapalle')) return false;
-          } else if (target === 'nptel') {
-            if (!issuer.includes('nptel')) return false;
-          } else if (target === 'nasscom') {
-            if (!issuer.includes('nasscom')) return false;
-          } else if (target === 'eduskills') {
-            if (!issuer.includes('eduskills') && !issuer.includes('aicte')) return false;
-          } else if (target === 'aws') {
-            if (!issuer.includes('aws') && !issuer.includes('amazon')) return false;
-          } else if (target === 'google') {
-            if (!issuer.includes('google')) return false;
-          } else if (target === 'uipath') {
-            if (!issuer.includes('uipath')) return false;
-          } else if (target === 'simplilearn') {
-            if (!issuer.includes('simplilearn')) return false;
-          } else if (target === 'board infinity') {
-            if (!issuer.includes('board infinity')) return false;
-          } else if (target === 'iste') {
-            if (!issuer.includes('iste')) return false;
-          } else if (!issuer.includes(target)) {
+        const filtered = verifiedCerts.filter(cert => {
+          // Category check
+          if (currentCategory !== 'ALL' && cert.category !== currentCategory) {
             return false;
           }
-        }
 
-        // Search query check
-        if (q) {
-          const inTitle = cert.title.toLowerCase().includes(q);
-          const inIssuer = cert.issuer.toLowerCase().includes(q);
-          const inDesc = (cert.description || '').toLowerCase().includes(q);
-          const inSkills = Array.isArray(cert.skills) && cert.skills.some(s => s.toLowerCase().includes(q));
-          const inBadge = (cert.badge || '').toLowerCase().includes(q);
-          if (!inTitle && !inIssuer && !inDesc && !inSkills && !inBadge) {
+          // Year check
+          if (currentYear !== 'ALL' && cert.year !== currentYear) {
             return false;
           }
-        }
 
-        return true;
-      });
+          // Organization check
+          if (currentOrg !== 'ALL') {
+            const issuer = (cert.issuer || '').toLowerCase();
+            const target = currentOrg.toLowerCase();
+            if (target === 'mits') {
+              if (!issuer.includes('mits') && !issuer.includes('madanapalle')) return false;
+            } else if (target === 'nptel') {
+              if (!issuer.includes('nptel')) return false;
+            } else if (target === 'nasscom') {
+              if (!issuer.includes('nasscom')) return false;
+            } else if (target === 'eduskills') {
+              if (!issuer.includes('eduskills') && !issuer.includes('aicte')) return false;
+            } else if (target === 'aws') {
+              if (!issuer.includes('aws') && !issuer.includes('amazon')) return false;
+            } else if (target === 'google') {
+              if (!issuer.includes('google')) return false;
+            } else if (target === 'uipath') {
+              if (!issuer.includes('uipath')) return false;
+            } else if (target === 'simplilearn') {
+              if (!issuer.includes('simplilearn')) return false;
+            } else if (target === 'board infinity') {
+              if (!issuer.includes('board infinity')) return false;
+            } else if (target === 'iste') {
+              if (!issuer.includes('iste')) return false;
+            } else if (!issuer.includes(target)) {
+              return false;
+            }
+          }
 
-      renderCertificates(filtered);
-    }
+          // Search query check
+          if (q) {
+            const inTitle = cert.title.toLowerCase().includes(q);
+            const inIssuer = cert.issuer.toLowerCase().includes(q);
+            const inDesc = (cert.description || '').toLowerCase().includes(q);
+            const inSkills = Array.isArray(cert.skills) && cert.skills.some(s => s.toLowerCase().includes(q));
+            const inBadge = (cert.badge || '').toLowerCase().includes(q);
+            if (!inTitle && !inIssuer && !inDesc && !inSkills && !inBadge) {
+              return false;
+            }
+          }
 
-    // Render Certificates
-    function renderCertificates(certs) {
-      certGrid.innerHTML = '';
+          return true;
+        });
 
-      if (certs.length === 0) {
-        certGrid.innerHTML = `
+        renderCertificates(filtered);
+      }
+
+      // Render Certificates
+      function renderCertificates(certs) {
+        certGrid.innerHTML = '';
+
+        if (certs.length === 0) {
+          certGrid.innerHTML = `
           <div class="empty-state">
             <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="var(--muted)" stroke-width="1.5" style="margin-bottom:8px;">
               <circle cx="11" cy="11" r="8"></circle>
@@ -1675,159 +1986,160 @@
             <button class="btn sm primary" onclick="resetAllFilters()">Reset All Filters</button>
           </div>
         `;
-      } else {
-        certs.forEach(cert => {
-          certGrid.appendChild(createCertCard(cert));
+        } else {
+          certs.forEach(cert => {
+            certGrid.appendChild(createCertCard(cert));
+          });
+        }
+
+        // Update counter
+        filterCount.textContent = `Showing ${certs.length} of ${totalVerified} verified certificates`;
+
+        // Show/hide reset button
+        const isFiltered = currentCategory !== 'ALL' || currentOrg !== 'ALL' || currentYear !== 'ALL' || searchQuery.trim() !== '';
+        resetFiltersBtn.style.display = isFiltered ? 'inline-block' : 'none';
+      }
+
+      // Render Offer Letters
+      function renderOfferLetters() {
+        offersGrid.innerHTML = '';
+        offerLetters.forEach(offer => {
+          offersGrid.appendChild(createOfferCard(offer));
         });
       }
 
-      // Update counter
-      filterCount.textContent = `Showing ${certs.length} of ${totalVerified} verified certificates`;
+      // Reset filters
+      window.resetAllFilters = function () {
+        currentCategory = 'ALL';
+        currentOrg = 'ALL';
+        currentYear = 'ALL';
+        searchQuery = '';
 
-      // Show/hide reset button
-      const isFiltered = currentCategory !== 'ALL' || currentOrg !== 'ALL' || currentYear !== 'ALL' || searchQuery.trim() !== '';
-      resetFiltersBtn.style.display = isFiltered ? 'inline-block' : 'none';
-    }
+        searchInput.value = '';
+        orgSelect.value = 'ALL';
+        yearSelect.value = 'ALL';
 
-    // Render Offer Letters
-    function renderOfferLetters() {
-      offersGrid.innerHTML = '';
-      offerLetters.forEach(offer => {
-        offersGrid.appendChild(createOfferCard(offer));
+        const pills = categoryPills.querySelectorAll('.cat-btn');
+        pills.forEach(p => {
+          p.classList.toggle('active', p.dataset.cat === 'ALL');
+        });
+
+        filterCertificates();
+      };
+
+      resetFiltersBtn.addEventListener('click', resetAllFilters);
+
+      // Event Listeners for Filters
+      categoryPills.addEventListener('click', function (e) {
+        const btn = e.target.closest('.cat-btn');
+        if (!btn) return;
+        categoryPills.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentCategory = btn.dataset.cat;
+        filterCertificates();
       });
-    }
 
-    // Reset filters
-    window.resetAllFilters = function() {
-      currentCategory = 'ALL';
-      currentOrg = 'ALL';
-      currentYear = 'ALL';
-      searchQuery = '';
-
-      searchInput.value = '';
-      orgSelect.value = 'ALL';
-      yearSelect.value = 'ALL';
-
-      const pills = categoryPills.querySelectorAll('.cat-btn');
-      pills.forEach(p => {
-        p.classList.toggle('active', p.dataset.cat === 'ALL');
+      searchInput.addEventListener('input', function (e) {
+        searchQuery = e.target.value;
+        filterCertificates();
       });
 
-      filterCertificates();
-    };
+      orgSelect.addEventListener('change', function (e) {
+        currentOrg = e.target.value;
+        filterCertificates();
+      });
 
-    resetFiltersBtn.addEventListener('click', resetAllFilters);
+      yearSelect.addEventListener('change', function (e) {
+        currentYear = e.target.value;
+        filterCertificates();
+      });
 
-    // Event Listeners for Filters
-    categoryPills.addEventListener('click', function(e) {
-      const btn = e.target.closest('.cat-btn');
-      if (!btn) return;
-      categoryPills.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      currentCategory = btn.dataset.cat;
-      filterCertificates();
-    });
+      // ============================================================
+      // MODAL PDF VIEWER CONTROLS
+      // ============================================================
+      window.openCertModal = function (certId) {
+        const cert = certificatesData.find(c => c.id === certId);
+        if (!cert) return;
 
-    searchInput.addEventListener('input', function(e) {
-      searchQuery = e.target.value;
-      filterCertificates();
-    });
+        modalTitle.textContent = cert.title;
+        modalCategory.textContent = cert.category;
+        modalCategory.className = 'cert-category-pill ' + getCategoryClass(cert.category);
+        modalIssuer.textContent = cert.issuer;
+        modalYear.textContent = cert.duration || cert.year;
 
-    orgSelect.addEventListener('change', function(e) {
-      currentOrg = e.target.value;
-      filterCertificates();
-    });
+        const pdfUrl = getPdfUrl(cert);
+        const safeTitle = (cert.title || 'Certificate').replace(/[^a-zA-Z0-9_\-\.]/g, '_');
+        modalNewTabBtn.href = pdfUrl;
+        modalDownloadBtn.href = pdfUrl;
+        modalDownloadBtn.setAttribute('download', `${safeTitle}.pdf`);
 
-    yearSelect.addEventListener('change', function(e) {
-      currentYear = e.target.value;
-      filterCertificates();
-    });
+        // Set iframe src with pdf viewer parameters
+        pdfFrame.src = `${pdfUrl}#toolbar=1&navpanes=1&zoom=100`;
 
-    // ============================================================
-    // MODAL PDF VIEWER CONTROLS
-    // ============================================================
-    window.openCertModal = function(certId) {
-      const cert = certificatesData.find(c => c.id === certId);
-      if (!cert) return;
-
-      modalTitle.textContent = cert.title;
-      modalCategory.textContent = cert.category;
-      modalCategory.className = 'cert-category-pill ' + getCategoryClass(cert.category);
-      modalIssuer.textContent = cert.issuer;
-      modalYear.textContent = cert.duration || cert.year;
-
-      const pdfUrl = getPdfUrl(cert);
-      const safeTitle = (cert.title || 'Certificate').replace(/[^a-zA-Z0-9_\-\.]/g, '_');
-      modalNewTabBtn.href = pdfUrl;
-      modalDownloadBtn.href = pdfUrl;
-      modalDownloadBtn.setAttribute('download', `${safeTitle}.pdf`);
-
-      // Set iframe src with pdf viewer parameters
-      pdfFrame.src = `${pdfUrl}#toolbar=1&navpanes=1&zoom=100`;
-
-      // Reset zoom
-      currentZoom = 1.0;
-      updateZoom();
-
-      // Open modal
-      modal.classList.add('open');
-      document.body.style.overflow = 'hidden';
-    };
-
-    window.closeCertModal = function() {
-      modal.classList.remove('open');
-      document.body.style.overflow = '';
-      setTimeout(() => {
-        pdfFrame.src = '';
-      }, 200);
-    };
-
-    modalCloseBtn.addEventListener('click', closeCertModal);
-
-    // Close when clicking modal backdrop
-    modal.addEventListener('click', function(e) {
-      if (e.target === modal) {
-        closeCertModal();
-      }
-    });
-
-    // Close on Escape key
-    window.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape' && modal.classList.contains('open')) {
-        closeCertModal();
-      }
-    });
-
-    // Zoom handlers
-    function updateZoom() {
-      pdfWrapper.style.transform = `scale(${currentZoom})`;
-      zoomResetBtn.querySelector('span').textContent = `${Math.round(currentZoom * 100)}%`;
-    }
-
-    zoomInBtn.addEventListener('click', function() {
-      if (currentZoom < 2.0) {
-        currentZoom = Math.min(2.0, currentZoom + 0.15);
+        // Reset zoom
+        currentZoom = 1.0;
         updateZoom();
-      }
-    });
 
-    zoomOutBtn.addEventListener('click', function() {
-      if (currentZoom > 0.6) {
-        currentZoom = Math.max(0.6, currentZoom - 0.15);
+        // Open modal
+        modal.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      };
+
+      window.closeCertModal = function () {
+        modal.classList.remove('open');
+        document.body.style.overflow = '';
+        setTimeout(() => {
+          pdfFrame.src = '';
+        }, 200);
+      };
+
+      modalCloseBtn.addEventListener('click', closeCertModal);
+
+      // Close when clicking modal backdrop
+      modal.addEventListener('click', function (e) {
+        if (e.target === modal) {
+          closeCertModal();
+        }
+      });
+
+      // Close on Escape key
+      window.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && modal.classList.contains('open')) {
+          closeCertModal();
+        }
+      });
+
+      // Zoom handlers
+      function updateZoom() {
+        pdfWrapper.style.transform = `scale(${currentZoom})`;
+        zoomResetBtn.querySelector('span').textContent = `${Math.round(currentZoom * 100)}%`;
+      }
+
+      zoomInBtn.addEventListener('click', function () {
+        if (currentZoom < 2.0) {
+          currentZoom = Math.min(2.0, currentZoom + 0.15);
+          updateZoom();
+        }
+      });
+
+      zoomOutBtn.addEventListener('click', function () {
+        if (currentZoom > 0.6) {
+          currentZoom = Math.max(0.6, currentZoom - 0.15);
+          updateZoom();
+        }
+      });
+
+      zoomResetBtn.addEventListener('click', function () {
+        currentZoom = 1.0;
         updateZoom();
-      }
-    });
+      });
 
-    zoomResetBtn.addEventListener('click', function() {
-      currentZoom = 1.0;
-      updateZoom();
-    });
+      // Initial renders
+      filterCertificates();
+      renderOfferLetters();
 
-    // Initial renders
-    filterCertificates();
-    renderOfferLetters();
-
-  })();
-</script>
+    })();
+  </script>
 </body>
+
 </html>
