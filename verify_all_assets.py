@@ -1,5 +1,6 @@
 import os
 import json
+import urllib.parse
 
 print("=== VERIFYING CERTIFICATES & ASSETS ===")
 
@@ -12,7 +13,7 @@ categories = {}
 
 for c in certs:
     pdf_path = c['pdfPath']
-    assert os.path.exists(pdf_path), f"File missing: {pdf_path}"
+    assert os.path.exists(pdf_path), f"File missing on disk: {pdf_path}"
     size = os.path.getsize(pdf_path)
     assert size > 0, f"File empty: {pdf_path}"
     
@@ -21,6 +22,12 @@ for c in certs:
         header = pf.read(5)
         assert header == b'%PDF-', f"Invalid PDF header in {pdf_path}: {header}"
         
+    # Check URL encoding
+    encoded_url = c['encodedUrl']
+    decoded = urllib.parse.unquote(encoded_url)
+    assert os.path.exists(decoded), f"Decoded URL does not match disk file: {decoded}"
+    assert ' ' not in encoded_url, f"Encoded URL still contains raw space: {encoded_url}"
+    
     cat = c['category']
     categories[cat] = categories.get(cat, 0) + 1
     
@@ -44,10 +51,4 @@ assert categories['Internships'] == 8
 assert categories['Technical'] == 6
 assert categories['Events'] == 8
 
-# Check public folder mirror
-for c in certs:
-    pub_path = os.path.join('public', c['pdfPath'])
-    assert os.path.exists(pub_path), f"Public mirror missing: {pub_path}"
-
-print("✓ All 43 files exist, have valid PDF magic headers, and match expected category counts!")
-
+print("✓ All 43 certificate files verified on disk with valid PDF headers and encoded URLs!")

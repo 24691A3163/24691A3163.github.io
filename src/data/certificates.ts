@@ -13,6 +13,7 @@ export interface Certificate {
   source_subpath: string;
   target_subpath: string;
   pdfPath: string;
+  encodedUrl: string;
   description: string;
   skills: string[];
   isOfferLetter: boolean;
@@ -38,7 +39,8 @@ export const certificatesData: Certificate[] = [
       "Cloud Computing"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/nptel/DISTRIBUTED SYSTEM NPTEL CERTIFICATE.pdf"
+    "pdfPath": "public/certificates/nptel/DISTRIBUTED SYSTEM NPTEL CERTIFICATE.pdf",
+    "encodedUrl": "public/certificates/nptel/DISTRIBUTED%20SYSTEM%20NPTEL%20CERTIFICATE.pdf"
   },
   {
     "id": "nptel-effective-writing",
@@ -58,7 +60,8 @@ export const certificatesData: Certificate[] = [
       "Documentation"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/nptel/Effective Writing.pdf"
+    "pdfPath": "public/certificates/nptel/Effective Writing.pdf",
+    "encodedUrl": "public/certificates/nptel/Effective%20Writing.pdf"
   },
   {
     "id": "nptel-german-1",
@@ -78,7 +81,8 @@ export const certificatesData: Certificate[] = [
       "Foreign Language"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/nptel/GERMAN.pdf"
+    "pdfPath": "public/certificates/nptel/GERMAN.pdf",
+    "encodedUrl": "public/certificates/nptel/GERMAN.pdf"
   },
   {
     "id": "nptel-iot",
@@ -99,7 +103,8 @@ export const certificatesData: Certificate[] = [
       "Embedded Systems"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/nptel/NPTEL IOT CERTIFICATE.pdf"
+    "pdfPath": "public/certificates/nptel/NPTEL IOT CERTIFICATE.pdf",
+    "encodedUrl": "public/certificates/nptel/NPTEL%20IOT%20CERTIFICATE.pdf"
   },
   {
     "id": "nptel-rpc",
@@ -120,7 +125,8 @@ export const certificatesData: Certificate[] = [
       "IP Law"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/nptel/RPC.pdf"
+    "pdfPath": "public/certificates/nptel/RPC.pdf",
+    "encodedUrl": "public/certificates/nptel/RPC.pdf"
   },
   {
     "id": "nptel-uie",
@@ -141,7 +147,8 @@ export const certificatesData: Certificate[] = [
       "Venture Strategy"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/nptel/UIE.pdf"
+    "pdfPath": "public/certificates/nptel/UIE.pdf",
+    "encodedUrl": "public/certificates/nptel/UIE.pdf"
   },
   {
     "id": "nasscom-dl-nlp-gold",
@@ -162,7 +169,8 @@ export const certificatesData: Certificate[] = [
       "Artificial Intelligence"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/nasscom/paid/CERTIFICATION IN DL-NLP-AI GOLD BADGE NASSCOM.pdf"
+    "pdfPath": "public/certificates/nasscom/paid/CERTIFICATION IN DL-NLP-AI GOLD BADGE NASSCOM.pdf",
+    "encodedUrl": "public/certificates/nasscom/paid/CERTIFICATION%20IN%20DL-NLP-AI%20GOLD%20BADGE%20NASSCOM.pdf"
   },
   {
     "id": "nasscom-prompt-eng-assessment",
@@ -183,7 +191,8 @@ export const certificatesData: Certificate[] = [
       "Generative AI"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/nasscom/paid/CERTIFICATION IN PROMPT ENGINEERING AND CHATGPT.pdf"
+    "pdfPath": "public/certificates/nasscom/paid/CERTIFICATION IN PROMPT ENGINEERING AND CHATGPT.pdf",
+    "encodedUrl": "public/certificates/nasscom/paid/CERTIFICATION%20IN%20PROMPT%20ENGINEERING%20AND%20CHATGPT.pdf"
   },
   {
     "id": "nasscom-eda-assessment",
@@ -204,7 +213,8 @@ export const certificatesData: Certificate[] = [
       "Pandas"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/nasscom/paid/EXPLORATORY DATA ANALYSIS NASSCOM.pdf"
+    "pdfPath": "public/certificates/nasscom/paid/EXPLORATORY DATA ANALYSIS NASSCOM.pdf",
+    "encodedUrl": "public/certificates/nasscom/paid/EXPLORATORY%20DATA%20ANALYSIS%20NASSCOM.pdf"
   },
   {
     "id": "nasscom-gen-ai-gold",
@@ -225,7 +235,8 @@ export const certificatesData: Certificate[] = [
       "AI Applications"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/nasscom/paid/GEN AI GOLD BADGE NASSCOM.pdf"
+    "pdfPath": "public/certificates/nasscom/paid/GEN AI GOLD BADGE NASSCOM.pdf",
+    "encodedUrl": "public/certificates/nasscom/paid/GEN%20AI%20GOLD%20BADGE%20NASSCOM.pdf"
   },
   {
     "id": "nasscom-aws-cloud",
@@ -246,7 +257,8 @@ export const certificatesData: Certificate[] = [
       "Cloud Security"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/nasscom/paid/NASSCOM AWS CLOUD.pdf"
+    "pdfPath": "public/certificates/nasscom/paid/NASSCOM AWS CLOUD.pdf",
+    "encodedUrl": "public/certificates/nasscom/paid/NASSCOM%20AWS%20CLOUD.pdf"
   },
   {
     "id": "nasscom-eda-free",
@@ -267,7 +279,8 @@ export const certificatesData: Certificate[] = [
       "Python"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/nasscom/free/EXPLORATORY DATA ANALYSIS NASSCOM.pdf"
+    "pdfPath": "public/certificates/nasscom/free/EXPLORATORY DATA ANALYSIS NASSCOM.pdf",
+    "encodedUrl": "public/certificates/nasscom/free/EXPLORATORY%20DATA%20ANALYSIS%20NASSCOM.pdf"
   },
   {
     "id": "nasscom-prompt-free",
@@ -288,7 +301,8 @@ export const certificatesData: Certificate[] = [
       "LLM APIs"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/nasscom/free/NASSCOM CHATGPT AND PROMPT ENGINEERING.pdf"
+    "pdfPath": "public/certificates/nasscom/free/NASSCOM CHATGPT AND PROMPT ENGINEERING.pdf",
+    "encodedUrl": "public/certificates/nasscom/free/NASSCOM%20CHATGPT%20AND%20PROMPT%20ENGINEERING.pdf"
   },
   {
     "id": "nasscom-dl-nlp-free",
@@ -309,7 +323,8 @@ export const certificatesData: Certificate[] = [
       "AI Standards"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/nasscom/free/NASSCOM DL,NLP CERTIFICATE.pdf"
+    "pdfPath": "public/certificates/nasscom/free/NASSCOM DL,NLP CERTIFICATE.pdf",
+    "encodedUrl": "public/certificates/nasscom/free/NASSCOM%20DL%2CNLP%20CERTIFICATE.pdf"
   },
   {
     "id": "nasscom-genai-free",
@@ -330,7 +345,8 @@ export const certificatesData: Certificate[] = [
       "AI Ethics"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/nasscom/free/NASSCOM GEN AI 101.pdf"
+    "pdfPath": "public/certificates/nasscom/free/NASSCOM GEN AI 101.pdf",
+    "encodedUrl": "public/certificates/nasscom/free/NASSCOM%20GEN%20AI%20101.pdf"
   },
   {
     "id": "intern-aiml-eduskills",
@@ -351,7 +367,8 @@ export const certificatesData: Certificate[] = [
       "Google Developer Tools"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/internships/AI-ML Virtual Internship.pdf"
+    "pdfPath": "public/certificates/internships/AI-ML Virtual Internship.pdf",
+    "encodedUrl": "public/certificates/internships/AI-ML%20Virtual%20Internship.pdf"
   },
   {
     "id": "intern-bigdata-eduskills",
@@ -372,7 +389,8 @@ export const certificatesData: Certificate[] = [
       "Data Analytics"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/internships/BIG DATA FUNDAMENTALS EDUSKILLS.pdf"
+    "pdfPath": "public/certificates/internships/BIG DATA FUNDAMENTALS EDUSKILLS.pdf",
+    "encodedUrl": "public/certificates/internships/BIG%20DATA%20FUNDAMENTALS%20EDUSKILLS.pdf"
   },
   {
     "id": "intern-java-fsd-eduskills",
@@ -393,7 +411,8 @@ export const certificatesData: Certificate[] = [
       "REST APIs"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/internships/Java Full Stack Developer Virtual Internship.pdf"
+    "pdfPath": "public/certificates/internships/Java Full Stack Developer Virtual Internship.pdf",
+    "encodedUrl": "public/certificates/internships/Java%20Full%20Stack%20Developer%20Virtual%20Internship.pdf"
   },
   {
     "id": "intern-java-fsd-credential",
@@ -415,7 +434,8 @@ export const certificatesData: Certificate[] = [
       "Version Control"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/internships/java fsd.pdf"
+    "pdfPath": "public/certificates/internships/java fsd.pdf",
+    "encodedUrl": "public/certificates/internships/java%20fsd.pdf"
   },
   {
     "id": "intern-python-fsd-eduskills",
@@ -436,7 +456,8 @@ export const certificatesData: Certificate[] = [
       "Web Technologies"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/internships/Python Fullstack Developer Virtual Internship.pdf"
+    "pdfPath": "public/certificates/internships/Python Fullstack Developer Virtual Internship.pdf",
+    "encodedUrl": "public/certificates/internships/Python%20Fullstack%20Developer%20Virtual%20Internship.pdf"
   },
   {
     "id": "intern-python-fsd-credential",
@@ -458,7 +479,8 @@ export const certificatesData: Certificate[] = [
       "Git"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/internships/Python fsd certificate.pdf"
+    "pdfPath": "public/certificates/internships/Python fsd certificate.pdf",
+    "encodedUrl": "public/certificates/internships/Python%20fsd%20certificate.pdf"
   },
   {
     "id": "intern-psnm-credential",
@@ -480,7 +502,8 @@ export const certificatesData: Certificate[] = [
       "React"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/internships/PSNM-Experience-Credential-PSNM_EL_2026_72E4EC.pdf"
+    "pdfPath": "public/certificates/internships/PSNM-Experience-Credential-PSNM_EL_2026_72E4EC.pdf",
+    "encodedUrl": "public/certificates/internships/PSNM-Experience-Credential-PSNM_EL_2026_72E4EC.pdf"
   },
   {
     "id": "intern-vault-of-codes",
@@ -501,7 +524,8 @@ export const certificatesData: Certificate[] = [
       "Software Engineering"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/internships/VALUT OF CODES.pdf"
+    "pdfPath": "public/certificates/internships/VALUT OF CODES.pdf",
+    "encodedUrl": "public/certificates/internships/VALUT%20OF%20CODES.pdf"
   },
   {
     "id": "tech-aws-practitioner",
@@ -522,7 +546,8 @@ export const certificatesData: Certificate[] = [
       "Cloud Security"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/technical/AWS CERTIFICATE.pdf"
+    "pdfPath": "public/certificates/technical/AWS CERTIFICATE.pdf",
+    "encodedUrl": "public/certificates/technical/AWS%20CERTIFICATE.pdf"
   },
   {
     "id": "tech-board-infinity-ds",
@@ -543,7 +568,8 @@ export const certificatesData: Certificate[] = [
       "Python"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/technical/DATA SCIENCE CERTIFICATE.pdf"
+    "pdfPath": "public/certificates/technical/DATA SCIENCE CERTIFICATE.pdf",
+    "encodedUrl": "public/certificates/technical/DATA%20SCIENCE%20CERTIFICATE.pdf"
   },
   {
     "id": "tech-mits-fsd-workshop",
@@ -564,7 +590,8 @@ export const certificatesData: Certificate[] = [
       "APIs"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/technical/FSD WORKSHOP.pdf"
+    "pdfPath": "public/certificates/technical/FSD WORKSHOP.pdf",
+    "encodedUrl": "public/certificates/technical/FSD%20WORKSHOP.pdf"
   },
   {
     "id": "tech-simplilearn-python",
@@ -585,7 +612,8 @@ export const certificatesData: Certificate[] = [
       "Data Structures"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/technical/SIMPLI LEARN PYTHON CERTIFICATE.pdf"
+    "pdfPath": "public/certificates/technical/SIMPLI LEARN PYTHON CERTIFICATE.pdf",
+    "encodedUrl": "public/certificates/technical/SIMPLI%20LEARN%20PYTHON%20CERTIFICATE.pdf"
   },
   {
     "id": "tech-simplilearn-webdev",
@@ -606,7 +634,8 @@ export const certificatesData: Certificate[] = [
       "Web Development"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/technical/SIMPLILEARN WEBDEVELOPMENT CERTIFICATE.pdf"
+    "pdfPath": "public/certificates/technical/SIMPLILEARN WEBDEVELOPMENT CERTIFICATE.pdf",
+    "encodedUrl": "public/certificates/technical/SIMPLILEARN%20WEBDEVELOPMENT%20CERTIFICATE.pdf"
   },
   {
     "id": "tech-uipath-associate",
@@ -627,7 +656,8 @@ export const certificatesData: Certificate[] = [
       "Workflow Design"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/technical/UI PATH CERTIFICATE.pdf"
+    "pdfPath": "public/certificates/technical/UI PATH CERTIFICATE.pdf",
+    "encodedUrl": "public/certificates/technical/UI%20PATH%20CERTIFICATE.pdf"
   },
   {
     "id": "event-ashv-2k25",
@@ -648,7 +678,8 @@ export const certificatesData: Certificate[] = [
       "Technical Fest"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/events/ASHV 2K25 CERTIFICATE.pdf"
+    "pdfPath": "public/certificates/events/ASHV 2K25 CERTIFICATE.pdf",
+    "encodedUrl": "public/certificates/events/ASHV%202K25%20CERTIFICATE.pdf"
   },
   {
     "id": "event-aura-tech-quiz",
@@ -668,7 +699,8 @@ export const certificatesData: Certificate[] = [
       "Competitive Tech Quiz"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/events/AURA 2K26 TECH QUIZ.pdf"
+    "pdfPath": "public/certificates/events/AURA 2K26 TECH QUIZ.pdf",
+    "encodedUrl": "public/certificates/events/AURA%202K26%20TECH%20QUIZ.pdf"
   },
   {
     "id": "event-code-crafting",
@@ -689,7 +721,8 @@ export const certificatesData: Certificate[] = [
       "Speed Coding"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/events/CODE CRAFTING.pdf"
+    "pdfPath": "public/certificates/events/CODE CRAFTING.pdf",
+    "encodedUrl": "public/certificates/events/CODE%20CRAFTING.pdf"
   },
   {
     "id": "event-drama-presentation",
@@ -710,7 +743,8 @@ export const certificatesData: Certificate[] = [
       "Communication"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/events/DRAMA CERTIFICATE.pdf"
+    "pdfPath": "public/certificates/events/DRAMA CERTIFICATE.pdf",
+    "encodedUrl": "public/certificates/events/DRAMA%20CERTIFICATE.pdf"
   },
   {
     "id": "event-google-top-prompt",
@@ -731,7 +765,8 @@ export const certificatesData: Certificate[] = [
       "Creative AI"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/events/GOOGLE.pdf"
+    "pdfPath": "public/certificates/events/GOOGLE.pdf",
+    "encodedUrl": "public/certificates/events/GOOGLE.pdf"
   },
   {
     "id": "event-prompt-eng-mits",
@@ -752,7 +787,8 @@ export const certificatesData: Certificate[] = [
       "Generative AI"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/events/PROMPT ENGINEERING.pdf"
+    "pdfPath": "public/certificates/events/PROMPT ENGINEERING.pdf",
+    "encodedUrl": "public/certificates/events/PROMPT%20ENGINEERING.pdf"
   },
   {
     "id": "event-protothon",
@@ -773,7 +809,8 @@ export const certificatesData: Certificate[] = [
       "Teamwork"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/events/PROTOTHON EVENT.pdf"
+    "pdfPath": "public/certificates/events/PROTOTHON EVENT.pdf",
+    "encodedUrl": "public/certificates/events/PROTOTHON%20EVENT.pdf"
   },
   {
     "id": "event-iste-membership",
@@ -793,7 +830,8 @@ export const certificatesData: Certificate[] = [
       "Research & Innovation"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/events/ISTE.pdf"
+    "pdfPath": "public/certificates/events/ISTE.pdf",
+    "encodedUrl": "public/certificates/events/ISTE.pdf"
   },
   {
     "id": "offer-psnm",
@@ -814,7 +852,8 @@ export const certificatesData: Certificate[] = [
       "Full Stack AI"
     ],
     "isOfferLetter": true,
-    "pdfPath": "certificates/offer_letters/PSNM-Offer-Letter.pdf"
+    "pdfPath": "public/certificates/offer_letters/PSNM-Offer-Letter.pdf",
+    "encodedUrl": "public/certificates/offer_letters/PSNM-Offer-Letter.pdf"
   },
   {
     "id": "offer-aiml-eduskills",
@@ -835,7 +874,8 @@ export const certificatesData: Certificate[] = [
       "Google for Developers"
     ],
     "isOfferLetter": true,
-    "pdfPath": "certificates/offer_letters/AI-ML offer letter.pdf"
+    "pdfPath": "public/certificates/offer_letters/AI-ML offer letter.pdf",
+    "encodedUrl": "public/certificates/offer_letters/AI-ML%20offer%20letter.pdf"
   },
   {
     "id": "offer-bda-eduskills",
@@ -856,7 +896,8 @@ export const certificatesData: Certificate[] = [
       "Data Pipelines"
     ],
     "isOfferLetter": true,
-    "pdfPath": "certificates/offer_letters/BDA offfer letter.pdf"
+    "pdfPath": "public/certificates/offer_letters/BDA offfer letter.pdf",
+    "encodedUrl": "public/certificates/offer_letters/BDA%20offfer%20letter.pdf"
   },
   {
     "id": "offer-python-fsd-eduskills",
@@ -877,7 +918,8 @@ export const certificatesData: Certificate[] = [
       "SQL"
     ],
     "isOfferLetter": true,
-    "pdfPath": "certificates/offer_letters/Python fsd offer letter.pdf"
+    "pdfPath": "public/certificates/offer_letters/Python fsd offer letter.pdf",
+    "encodedUrl": "public/certificates/offer_letters/Python%20fsd%20offer%20letter.pdf"
   },
   {
     "id": "offer-sql-dbms-eduskills",
@@ -898,7 +940,8 @@ export const certificatesData: Certificate[] = [
       "DBMS"
     ],
     "isOfferLetter": true,
-    "pdfPath": "certificates/offer_letters/SQL AND DBMS OFFER LETTER.pdf"
+    "pdfPath": "public/certificates/offer_letters/SQL AND DBMS OFFER LETTER.pdf",
+    "encodedUrl": "public/certificates/offer_letters/SQL%20AND%20DBMS%20OFFER%20LETTER.pdf"
   },
   {
     "id": "offer-vault-of-codes",
@@ -918,6 +961,14 @@ export const certificatesData: Certificate[] = [
       "Backend Development"
     ],
     "isOfferLetter": true,
-    "pdfPath": "certificates/offer_letters/VALUT OF CODES OL.pdf"
+    "pdfPath": "public/certificates/offer_letters/VALUT OF CODES OL.pdf",
+    "encodedUrl": "public/certificates/offer_letters/VALUT%20OF%20CODES%20OL.pdf"
   }
 ];
+
+export function getCertificateUrl(cert: Certificate): string {
+  if (!cert) return '';
+  if (cert.encodedUrl) return cert.encodedUrl;
+  const path = cert.pdfPath || ('public/certificates/' + (cert.target_subpath || ''));
+  return path.split('/').map(part => encodeURIComponent(part)).join('/');
+}

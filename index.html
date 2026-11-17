@@ -1478,6 +1478,15 @@
       return '';
     }
 
+    // Helper: generate properly encoded URL for GitHub Pages / static hosting
+    function getPdfUrl(cert) {
+      if (!cert) return '';
+      if (cert.encodedUrl) return cert.encodedUrl;
+      const path = cert.pdfPath || ('public/certificates/' + (cert.target_subpath || ''));
+      const normalized = path.replace(/^\.?\/?(public\/)?/, 'public/');
+      return normalized.split('/').map(part => encodeURIComponent(part)).join('/');
+    }
+
     // Create Certificate Card HTML
     function createCertCard(cert) {
       const card = document.createElement('article');
@@ -1491,6 +1500,10 @@
       const skillsHtml = Array.isArray(cert.skills) && cert.skills.length > 0
         ? `<div class="cert-skills">${cert.skills.map(s => `<span class="cert-skill-tag">${escapeHtml(s)}</span>`).join('')}</div>`
         : '';
+
+      const pdfUrl = getPdfUrl(cert);
+      const safeTitle = (cert.title || 'Certificate').replace(/[^a-zA-Z0-9_\-\.]/g, '_');
+      const downloadFilename = escapeHtml(safeTitle) + '.pdf';
 
       card.innerHTML = `
         <div>
@@ -1511,11 +1524,11 @@
           ${skillsHtml}
         </div>
         <div class="cert-card-actions">
-          <button class="cert-btn view" onclick="openCertModal('${cert.id}')">
+          <a class="cert-btn view" href="${pdfUrl}" target="_blank" rel="noopener noreferrer">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
             View Certificate
-          </button>
-          <a class="cert-btn download" href="${cert.pdfPath}" download="${escapeHtml(cert.title)}.pdf" target="_blank" rel="noopener">
+          </a>
+          <a class="cert-btn download" href="${pdfUrl}" download="${downloadFilename}" target="_blank" rel="noopener noreferrer">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
             Download
           </a>
@@ -1534,6 +1547,10 @@
       const skillsHtml = Array.isArray(offer.skills) && offer.skills.length > 0
         ? `<div class="cert-skills">${offer.skills.map(s => `<span class="cert-skill-tag">${escapeHtml(s)}</span>`).join('')}</div>`
         : '';
+
+      const pdfUrl = getPdfUrl(offer);
+      const safeTitle = (offer.title || 'Offer_Letter').replace(/[^a-zA-Z0-9_\-\.]/g, '_');
+      const downloadFilename = escapeHtml(safeTitle) + '.pdf';
 
       card.innerHTML = `
         <div>
@@ -1556,11 +1573,11 @@
           ${skillsHtml}
         </div>
         <div class="cert-card-actions">
-          <button class="cert-btn view" onclick="openCertModal('${offer.id}')">
+          <a class="cert-btn view" href="${pdfUrl}" target="_blank" rel="noopener noreferrer">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
             View Document
-          </button>
-          <a class="cert-btn download" href="${offer.pdfPath}" download="${escapeHtml(offer.title)}.pdf" target="_blank" rel="noopener">
+          </a>
+          <a class="cert-btn download" href="${pdfUrl}" download="${downloadFilename}" target="_blank" rel="noopener noreferrer">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
             Download
           </a>
@@ -1739,10 +1756,11 @@
       modalIssuer.textContent = cert.issuer;
       modalYear.textContent = cert.duration || cert.year;
 
-      const pdfUrl = cert.pdfPath;
+      const pdfUrl = getPdfUrl(cert);
+      const safeTitle = (cert.title || 'Certificate').replace(/[^a-zA-Z0-9_\-\.]/g, '_');
       modalNewTabBtn.href = pdfUrl;
       modalDownloadBtn.href = pdfUrl;
-      modalDownloadBtn.setAttribute('download', `${cert.title}.pdf`);
+      modalDownloadBtn.setAttribute('download', `${safeTitle}.pdf`);
 
       // Set iframe src with pdf viewer parameters
       pdfFrame.src = `${pdfUrl}#toolbar=1&navpanes=1&zoom=100`;

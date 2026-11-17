@@ -1,4 +1,5 @@
 // Avula Divya Tej Reddy - Verified Certificates Metadata
+// Paths updated for GitHub Pages root and static deployment compatibility
 const certificatesData = [
   {
     "id": "nptel-dist-sys",
@@ -19,7 +20,8 @@ const certificatesData = [
       "Cloud Computing"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/nptel/DISTRIBUTED SYSTEM NPTEL CERTIFICATE.pdf"
+    "pdfPath": "public/certificates/nptel/DISTRIBUTED SYSTEM NPTEL CERTIFICATE.pdf",
+    "encodedUrl": "public/certificates/nptel/DISTRIBUTED%20SYSTEM%20NPTEL%20CERTIFICATE.pdf"
   },
   {
     "id": "nptel-effective-writing",
@@ -39,7 +41,8 @@ const certificatesData = [
       "Documentation"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/nptel/Effective Writing.pdf"
+    "pdfPath": "public/certificates/nptel/Effective Writing.pdf",
+    "encodedUrl": "public/certificates/nptel/Effective%20Writing.pdf"
   },
   {
     "id": "nptel-german-1",
@@ -59,7 +62,8 @@ const certificatesData = [
       "Foreign Language"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/nptel/GERMAN.pdf"
+    "pdfPath": "public/certificates/nptel/GERMAN.pdf",
+    "encodedUrl": "public/certificates/nptel/GERMAN.pdf"
   },
   {
     "id": "nptel-iot",
@@ -80,7 +84,8 @@ const certificatesData = [
       "Embedded Systems"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/nptel/NPTEL IOT CERTIFICATE.pdf"
+    "pdfPath": "public/certificates/nptel/NPTEL IOT CERTIFICATE.pdf",
+    "encodedUrl": "public/certificates/nptel/NPTEL%20IOT%20CERTIFICATE.pdf"
   },
   {
     "id": "nptel-rpc",
@@ -101,7 +106,8 @@ const certificatesData = [
       "IP Law"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/nptel/RPC.pdf"
+    "pdfPath": "public/certificates/nptel/RPC.pdf",
+    "encodedUrl": "public/certificates/nptel/RPC.pdf"
   },
   {
     "id": "nptel-uie",
@@ -122,7 +128,8 @@ const certificatesData = [
       "Venture Strategy"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/nptel/UIE.pdf"
+    "pdfPath": "public/certificates/nptel/UIE.pdf",
+    "encodedUrl": "public/certificates/nptel/UIE.pdf"
   },
   {
     "id": "nasscom-dl-nlp-gold",
@@ -143,7 +150,8 @@ const certificatesData = [
       "Artificial Intelligence"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/nasscom/paid/CERTIFICATION IN DL-NLP-AI GOLD BADGE NASSCOM.pdf"
+    "pdfPath": "public/certificates/nasscom/paid/CERTIFICATION IN DL-NLP-AI GOLD BADGE NASSCOM.pdf",
+    "encodedUrl": "public/certificates/nasscom/paid/CERTIFICATION%20IN%20DL-NLP-AI%20GOLD%20BADGE%20NASSCOM.pdf"
   },
   {
     "id": "nasscom-prompt-eng-assessment",
@@ -164,7 +172,8 @@ const certificatesData = [
       "Generative AI"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/nasscom/paid/CERTIFICATION IN PROMPT ENGINEERING AND CHATGPT.pdf"
+    "pdfPath": "public/certificates/nasscom/paid/CERTIFICATION IN PROMPT ENGINEERING AND CHATGPT.pdf",
+    "encodedUrl": "public/certificates/nasscom/paid/CERTIFICATION%20IN%20PROMPT%20ENGINEERING%20AND%20CHATGPT.pdf"
   },
   {
     "id": "nasscom-eda-assessment",
@@ -185,7 +194,8 @@ const certificatesData = [
       "Pandas"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/nasscom/paid/EXPLORATORY DATA ANALYSIS NASSCOM.pdf"
+    "pdfPath": "public/certificates/nasscom/paid/EXPLORATORY DATA ANALYSIS NASSCOM.pdf",
+    "encodedUrl": "public/certificates/nasscom/paid/EXPLORATORY%20DATA%20ANALYSIS%20NASSCOM.pdf"
   },
   {
     "id": "nasscom-gen-ai-gold",
@@ -206,7 +216,8 @@ const certificatesData = [
       "AI Applications"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/nasscom/paid/GEN AI GOLD BADGE NASSCOM.pdf"
+    "pdfPath": "public/certificates/nasscom/paid/GEN AI GOLD BADGE NASSCOM.pdf",
+    "encodedUrl": "public/certificates/nasscom/paid/GEN%20AI%20GOLD%20BADGE%20NASSCOM.pdf"
   },
   {
     "id": "nasscom-aws-cloud",
@@ -227,7 +238,8 @@ const certificatesData = [
       "Cloud Security"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/nasscom/paid/NASSCOM AWS CLOUD.pdf"
+    "pdfPath": "public/certificates/nasscom/paid/NASSCOM AWS CLOUD.pdf",
+    "encodedUrl": "public/certificates/nasscom/paid/NASSCOM%20AWS%20CLOUD.pdf"
   },
   {
     "id": "nasscom-eda-free",
@@ -248,7 +260,8 @@ const certificatesData = [
       "Python"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/nasscom/free/EXPLORATORY DATA ANALYSIS NASSCOM.pdf"
+    "pdfPath": "public/certificates/nasscom/free/EXPLORATORY DATA ANALYSIS NASSCOM.pdf",
+    "encodedUrl": "public/certificates/nasscom/free/EXPLORATORY%20DATA%20ANALYSIS%20NASSCOM.pdf"
   },
   {
     "id": "nasscom-prompt-free",
@@ -269,7 +282,8 @@ const certificatesData = [
       "LLM APIs"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/nasscom/free/NASSCOM CHATGPT AND PROMPT ENGINEERING.pdf"
+    "pdfPath": "public/certificates/nasscom/free/NASSCOM CHATGPT AND PROMPT ENGINEERING.pdf",
+    "encodedUrl": "public/certificates/nasscom/free/NASSCOM%20CHATGPT%20AND%20PROMPT%20ENGINEERING.pdf"
   },
   {
     "id": "nasscom-dl-nlp-free",
@@ -290,7 +304,8 @@ const certificatesData = [
       "AI Standards"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/nasscom/free/NASSCOM DL,NLP CERTIFICATE.pdf"
+    "pdfPath": "public/certificates/nasscom/free/NASSCOM DL,NLP CERTIFICATE.pdf",
+    "encodedUrl": "public/certificates/nasscom/free/NASSCOM%20DL%2CNLP%20CERTIFICATE.pdf"
   },
   {
     "id": "nasscom-genai-free",
@@ -311,7 +326,8 @@ const certificatesData = [
       "AI Ethics"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/nasscom/free/NASSCOM GEN AI 101.pdf"
+    "pdfPath": "public/certificates/nasscom/free/NASSCOM GEN AI 101.pdf",
+    "encodedUrl": "public/certificates/nasscom/free/NASSCOM%20GEN%20AI%20101.pdf"
   },
   {
     "id": "intern-aiml-eduskills",
@@ -332,7 +348,8 @@ const certificatesData = [
       "Google Developer Tools"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/internships/AI-ML Virtual Internship.pdf"
+    "pdfPath": "public/certificates/internships/AI-ML Virtual Internship.pdf",
+    "encodedUrl": "public/certificates/internships/AI-ML%20Virtual%20Internship.pdf"
   },
   {
     "id": "intern-bigdata-eduskills",
@@ -353,7 +370,8 @@ const certificatesData = [
       "Data Analytics"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/internships/BIG DATA FUNDAMENTALS EDUSKILLS.pdf"
+    "pdfPath": "public/certificates/internships/BIG DATA FUNDAMENTALS EDUSKILLS.pdf",
+    "encodedUrl": "public/certificates/internships/BIG%20DATA%20FUNDAMENTALS%20EDUSKILLS.pdf"
   },
   {
     "id": "intern-java-fsd-eduskills",
@@ -374,7 +392,8 @@ const certificatesData = [
       "REST APIs"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/internships/Java Full Stack Developer Virtual Internship.pdf"
+    "pdfPath": "public/certificates/internships/Java Full Stack Developer Virtual Internship.pdf",
+    "encodedUrl": "public/certificates/internships/Java%20Full%20Stack%20Developer%20Virtual%20Internship.pdf"
   },
   {
     "id": "intern-java-fsd-credential",
@@ -396,7 +415,8 @@ const certificatesData = [
       "Version Control"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/internships/java fsd.pdf"
+    "pdfPath": "public/certificates/internships/java fsd.pdf",
+    "encodedUrl": "public/certificates/internships/java%20fsd.pdf"
   },
   {
     "id": "intern-python-fsd-eduskills",
@@ -417,7 +437,8 @@ const certificatesData = [
       "Web Technologies"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/internships/Python Fullstack Developer Virtual Internship.pdf"
+    "pdfPath": "public/certificates/internships/Python Fullstack Developer Virtual Internship.pdf",
+    "encodedUrl": "public/certificates/internships/Python%20Fullstack%20Developer%20Virtual%20Internship.pdf"
   },
   {
     "id": "intern-python-fsd-credential",
@@ -439,7 +460,8 @@ const certificatesData = [
       "Git"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/internships/Python fsd certificate.pdf"
+    "pdfPath": "public/certificates/internships/Python fsd certificate.pdf",
+    "encodedUrl": "public/certificates/internships/Python%20fsd%20certificate.pdf"
   },
   {
     "id": "intern-psnm-credential",
@@ -461,7 +483,8 @@ const certificatesData = [
       "React"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/internships/PSNM-Experience-Credential-PSNM_EL_2026_72E4EC.pdf"
+    "pdfPath": "public/certificates/internships/PSNM-Experience-Credential-PSNM_EL_2026_72E4EC.pdf",
+    "encodedUrl": "public/certificates/internships/PSNM-Experience-Credential-PSNM_EL_2026_72E4EC.pdf"
   },
   {
     "id": "intern-vault-of-codes",
@@ -482,7 +505,8 @@ const certificatesData = [
       "Software Engineering"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/internships/VALUT OF CODES.pdf"
+    "pdfPath": "public/certificates/internships/VALUT OF CODES.pdf",
+    "encodedUrl": "public/certificates/internships/VALUT%20OF%20CODES.pdf"
   },
   {
     "id": "tech-aws-practitioner",
@@ -503,7 +527,8 @@ const certificatesData = [
       "Cloud Security"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/technical/AWS CERTIFICATE.pdf"
+    "pdfPath": "public/certificates/technical/AWS CERTIFICATE.pdf",
+    "encodedUrl": "public/certificates/technical/AWS%20CERTIFICATE.pdf"
   },
   {
     "id": "tech-board-infinity-ds",
@@ -524,7 +549,8 @@ const certificatesData = [
       "Python"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/technical/DATA SCIENCE CERTIFICATE.pdf"
+    "pdfPath": "public/certificates/technical/DATA SCIENCE CERTIFICATE.pdf",
+    "encodedUrl": "public/certificates/technical/DATA%20SCIENCE%20CERTIFICATE.pdf"
   },
   {
     "id": "tech-mits-fsd-workshop",
@@ -545,7 +571,8 @@ const certificatesData = [
       "APIs"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/technical/FSD WORKSHOP.pdf"
+    "pdfPath": "public/certificates/technical/FSD WORKSHOP.pdf",
+    "encodedUrl": "public/certificates/technical/FSD%20WORKSHOP.pdf"
   },
   {
     "id": "tech-simplilearn-python",
@@ -566,7 +593,8 @@ const certificatesData = [
       "Data Structures"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/technical/SIMPLI LEARN PYTHON CERTIFICATE.pdf"
+    "pdfPath": "public/certificates/technical/SIMPLI LEARN PYTHON CERTIFICATE.pdf",
+    "encodedUrl": "public/certificates/technical/SIMPLI%20LEARN%20PYTHON%20CERTIFICATE.pdf"
   },
   {
     "id": "tech-simplilearn-webdev",
@@ -587,7 +615,8 @@ const certificatesData = [
       "Web Development"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/technical/SIMPLILEARN WEBDEVELOPMENT CERTIFICATE.pdf"
+    "pdfPath": "public/certificates/technical/SIMPLILEARN WEBDEVELOPMENT CERTIFICATE.pdf",
+    "encodedUrl": "public/certificates/technical/SIMPLILEARN%20WEBDEVELOPMENT%20CERTIFICATE.pdf"
   },
   {
     "id": "tech-uipath-associate",
@@ -608,7 +637,8 @@ const certificatesData = [
       "Workflow Design"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/technical/UI PATH CERTIFICATE.pdf"
+    "pdfPath": "public/certificates/technical/UI PATH CERTIFICATE.pdf",
+    "encodedUrl": "public/certificates/technical/UI%20PATH%20CERTIFICATE.pdf"
   },
   {
     "id": "event-ashv-2k25",
@@ -629,7 +659,8 @@ const certificatesData = [
       "Technical Fest"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/events/ASHV 2K25 CERTIFICATE.pdf"
+    "pdfPath": "public/certificates/events/ASHV 2K25 CERTIFICATE.pdf",
+    "encodedUrl": "public/certificates/events/ASHV%202K25%20CERTIFICATE.pdf"
   },
   {
     "id": "event-aura-tech-quiz",
@@ -649,7 +680,8 @@ const certificatesData = [
       "Competitive Tech Quiz"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/events/AURA 2K26 TECH QUIZ.pdf"
+    "pdfPath": "public/certificates/events/AURA 2K26 TECH QUIZ.pdf",
+    "encodedUrl": "public/certificates/events/AURA%202K26%20TECH%20QUIZ.pdf"
   },
   {
     "id": "event-code-crafting",
@@ -670,7 +702,8 @@ const certificatesData = [
       "Speed Coding"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/events/CODE CRAFTING.pdf"
+    "pdfPath": "public/certificates/events/CODE CRAFTING.pdf",
+    "encodedUrl": "public/certificates/events/CODE%20CRAFTING.pdf"
   },
   {
     "id": "event-drama-presentation",
@@ -691,7 +724,8 @@ const certificatesData = [
       "Communication"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/events/DRAMA CERTIFICATE.pdf"
+    "pdfPath": "public/certificates/events/DRAMA CERTIFICATE.pdf",
+    "encodedUrl": "public/certificates/events/DRAMA%20CERTIFICATE.pdf"
   },
   {
     "id": "event-google-top-prompt",
@@ -712,7 +746,8 @@ const certificatesData = [
       "Creative AI"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/events/GOOGLE.pdf"
+    "pdfPath": "public/certificates/events/GOOGLE.pdf",
+    "encodedUrl": "public/certificates/events/GOOGLE.pdf"
   },
   {
     "id": "event-prompt-eng-mits",
@@ -733,7 +768,8 @@ const certificatesData = [
       "Generative AI"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/events/PROMPT ENGINEERING.pdf"
+    "pdfPath": "public/certificates/events/PROMPT ENGINEERING.pdf",
+    "encodedUrl": "public/certificates/events/PROMPT%20ENGINEERING.pdf"
   },
   {
     "id": "event-protothon",
@@ -754,7 +790,8 @@ const certificatesData = [
       "Teamwork"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/events/PROTOTHON EVENT.pdf"
+    "pdfPath": "public/certificates/events/PROTOTHON EVENT.pdf",
+    "encodedUrl": "public/certificates/events/PROTOTHON%20EVENT.pdf"
   },
   {
     "id": "event-iste-membership",
@@ -774,7 +811,8 @@ const certificatesData = [
       "Research & Innovation"
     ],
     "isOfferLetter": false,
-    "pdfPath": "certificates/events/ISTE.pdf"
+    "pdfPath": "public/certificates/events/ISTE.pdf",
+    "encodedUrl": "public/certificates/events/ISTE.pdf"
   },
   {
     "id": "offer-psnm",
@@ -795,7 +833,8 @@ const certificatesData = [
       "Full Stack AI"
     ],
     "isOfferLetter": true,
-    "pdfPath": "certificates/offer_letters/PSNM-Offer-Letter.pdf"
+    "pdfPath": "public/certificates/offer_letters/PSNM-Offer-Letter.pdf",
+    "encodedUrl": "public/certificates/offer_letters/PSNM-Offer-Letter.pdf"
   },
   {
     "id": "offer-aiml-eduskills",
@@ -816,7 +855,8 @@ const certificatesData = [
       "Google for Developers"
     ],
     "isOfferLetter": true,
-    "pdfPath": "certificates/offer_letters/AI-ML offer letter.pdf"
+    "pdfPath": "public/certificates/offer_letters/AI-ML offer letter.pdf",
+    "encodedUrl": "public/certificates/offer_letters/AI-ML%20offer%20letter.pdf"
   },
   {
     "id": "offer-bda-eduskills",
@@ -837,7 +877,8 @@ const certificatesData = [
       "Data Pipelines"
     ],
     "isOfferLetter": true,
-    "pdfPath": "certificates/offer_letters/BDA offfer letter.pdf"
+    "pdfPath": "public/certificates/offer_letters/BDA offfer letter.pdf",
+    "encodedUrl": "public/certificates/offer_letters/BDA%20offfer%20letter.pdf"
   },
   {
     "id": "offer-python-fsd-eduskills",
@@ -858,7 +899,8 @@ const certificatesData = [
       "SQL"
     ],
     "isOfferLetter": true,
-    "pdfPath": "certificates/offer_letters/Python fsd offer letter.pdf"
+    "pdfPath": "public/certificates/offer_letters/Python fsd offer letter.pdf",
+    "encodedUrl": "public/certificates/offer_letters/Python%20fsd%20offer%20letter.pdf"
   },
   {
     "id": "offer-sql-dbms-eduskills",
@@ -879,7 +921,8 @@ const certificatesData = [
       "DBMS"
     ],
     "isOfferLetter": true,
-    "pdfPath": "certificates/offer_letters/SQL AND DBMS OFFER LETTER.pdf"
+    "pdfPath": "public/certificates/offer_letters/SQL AND DBMS OFFER LETTER.pdf",
+    "encodedUrl": "public/certificates/offer_letters/SQL%20AND%20DBMS%20OFFER%20LETTER.pdf"
   },
   {
     "id": "offer-vault-of-codes",
@@ -899,7 +942,19 @@ const certificatesData = [
       "Backend Development"
     ],
     "isOfferLetter": true,
-    "pdfPath": "certificates/offer_letters/VALUT OF CODES OL.pdf"
+    "pdfPath": "public/certificates/offer_letters/VALUT OF CODES OL.pdf",
+    "encodedUrl": "public/certificates/offer_letters/VALUT%20OF%20CODES%20OL.pdf"
   }
 ];
-if (typeof module !== 'undefined' && module.exports) { module.exports = certificatesData; }
+
+// Helper function to get properly encoded URL for GitHub Pages / web servers
+function getCertificateUrl(cert) {
+  if (!cert) return '';
+  if (cert.encodedUrl) return cert.encodedUrl;
+  const path = cert.pdfPath || ('public/certificates/' + (cert.target_subpath || ''));
+  return path.split('/').map(part => encodeURIComponent(part)).join('/');
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = { certificatesData, getCertificateUrl };
+}
